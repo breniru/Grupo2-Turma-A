@@ -32,10 +32,10 @@ public class OperacaoAurora {
 		} while (escolha_menu != 1 && escolha_menu != 2 && escolha_menu != 3 && escolha_menu != 4);
 	}
 	
-	public static void Digita(String mensagem, TimeUnit unit, long tempo_mensagem) throws InterruptedException {
-		for (char caractere : mensagem.toCharArray()) {
-			System.out.print(caractere);
-			unit.sleep(tempo_mensagem);
+//	public static void Digita(String mensagem, TimeUnit unit, long tempo_mensagem) throws InterruptedException {
+//		for (char caractere : mensagem.toCharArray()) {
+//			System.out.print(caractere);
+//			unit.sleep(tempo_mensagem);
 		}
 	}
 }
