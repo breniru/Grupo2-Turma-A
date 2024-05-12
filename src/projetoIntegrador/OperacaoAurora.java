@@ -5,7 +5,8 @@ import java.util.concurrent.TimeUnit;
 
 public class OperacaoAurora {
 	/*
-	 * Fazenddo a chamda do scanner de forma global para ser utilizada no código inteiro.
+	 * Fazenddo a chamda do scanner de forma global para ser utilizada no código 
+	 * inteiro.
 	 * Isso evita de ficar instanciando em todas as funções.
 	 */
 	static Scanner input = new Scanner(System.in);
