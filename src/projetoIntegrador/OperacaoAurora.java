@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 public class OperacaoAurora {
 	/*
-	 * Fazenddo a chamda do scanner de forma global para ser utilizada no código 
+	 * Fazenddo a chamada do scanner de forma global para ser utilizada no código 
 	 * inteiro.
 	 * Isso evita de ficar instanciando em todas as funções.
 	 */
@@ -69,8 +69,55 @@ public class OperacaoAurora {
 	 * Função responsável por iniciar o SEGUNDO capitúlo.
 	 */
 	static void DesvendarOlhoSecreto() {
-		System.out.println("\nDESENDANDO O OLHO SECRETO: ");
+		
+		
+		System.out.println("\nCapitulo 2:");
+		System.out.println("\n");
+		System.out.println(
+		            "██████╗ ███████╗███████╗██╗   ██╗███████╗███╗   ██╗██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ \n" +
+		            "██╔══██╗██╔════╝██╔════╝██║   ██║██╔════╝████╗  ██║██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔═══██╗\n" +
+		            "██║  ██║█████╗  ███████╗██║   ██║█████╗  ██╔██╗ ██║██║  ██║███████║██╔██╗ ██║██║  ██║██║   ██║\n" +
+		            "██║  ██║██╔══╝  ╚════██║╚██╗ ██╔╝██╔══╝  ██║╚██╗██║██║  ██║██╔══██║██║╚██╗██║██║  ██║██║   ██║\n" +
+		            "██████╔╝███████╗███████║ ╚████╔╝ ███████╗██║ ╚████║██████╔╝██║  ██║██║ ╚████║██████╔╝╚██████╔╝\n" +
+		            "╚═════╝ ╚══════╝╚══════╝  ╚═══╝  ╚══════╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ \n" +
+		            " ██████╗      ██████╗ ██╗     ██╗  ██╗ ██████╗     ███████╗███████╗ ██████╗██████╗ ███████╗████████╗ ██████╗    \n" +
+		            "██╔═══██╗    ██╔═══██╗██║     ██║  ██║██╔═══██╗    ██╔════╝██╔════╝██╔════╝██╔══██╗██╔════╝╚══██╔══╝██╔═══██╗ ██╗\n" +
+		            "██║   ██║    ██║   ██║██║     ███████║██║   ██║    ███████╗█████╗  ██║     ██████╔╝█████╗     ██║   ██║   ██║ ╚═╝\n" +
+		            "██║   ██║    ██║   ██║██║     ██╔══██║██║   ██║    ╚════██║██╔══╝  ██║     ██╔══██╗██╔══╝     ██║   ██║   ██║ ██╗\n" +
+		            "╚██████╔╝    ╚██████╔╝███████╗██║  ██║╚██████╔╝    ███████║███████╗╚██████╗██║  ██║███████╗   ██║   ╚██████╔╝ ╚═╝\n" +
+		            " ╚═════╝      ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝     ╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝   ╚═╝    ╚═════╝    "
+		        );
+		
+		System.out.println("\n");
+		System.out.println("\nApós Ethan conferir quase todos os documentos encontrados dentro do compartimento secreto.");
+		System.out.println("\nEle encontra um ultimo documento, então Ethan resolve ler esse documento, nele estava escrito algumas informações sobre seus pais e que eles eram dono de uma organização secreta conhecida como O Olho Secreto");
+	    System.out.println("\nUma organização secreta obscura especializada em segurança nacional e em inteligência liderada pelo seus pais que,aparentemente,foram vítimas de uma traição dentro da própria organização.");
+		System.out.println("\nA revelaçào acaba sendo desvastadora para Ethan, o que acaba fazendo com que ele ficasse muito confuso e devastado com tudo que ele tinha lido no documento.Então Ethan se vê diante de um dilema cruel:");
+		System.out.println("\nSeguir em frente com sua vida ou embarcar em uma jornada perigosa para desvendar a verdade sobre seus pais e a organização obscura à qual eles pertenciam:");
+		
+		int decisao;
+		do {
+			System.out.println("\n1 - Seguir em frente com sua vida e ignorar tudo que tenha lido");
+            System.out.println("2 - Embarcar em uma jornada perigosa para desvendar a verdade sobre seus pais e a organização obscura à qual eles pertenciam.");
+            
+            decisao = input.nextInt();
+            
+            if (decisao == 1) {
+                System.out.println("\nVocê decidiu seguir em frente com sua vida e ignorar tudo que você leu. Mas será que essa é realmente um boa descisão!");
+            } else if (decisao == 2) {
+                System.out.println("Você escolheu embarcar em uma jornada perigosa em busca da verdade sobre seus pais e a organização obscura.");
+                
+            } else {
+                System.out.println("Opção inválida. Por favor, escolha apenas [1] ou [2]:");
+            }
+        
+		} while (decisao != 2);
+	 
+		System.out.println("A sede de justiça e a busca por respostas o impulsionam a seguir em frente. Você decide infiltrar-se mo O Olho Secreto e desvendar seus segredos e descobrir quem foi o responsável pela morte de seus pais");
+		System.out.println("A missão vai ser árdua e repleta de perigos, mas Ethan está determinado a fazer o que for preciso para obter justiça e honrar a memória de seus pais.");
 	}
+	
+	
 
 	/*
 	 * Função responsável por iniciar o TERCEIRO capitúlo.
