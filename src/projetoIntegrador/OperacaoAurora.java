@@ -236,7 +236,52 @@ public class OperacaoAurora {
 			}
 	        
 			System.out.println("Após ethan consegui matar os dois guardas, ele segue em frente pelos corredores");
-			System.out.println("Ethan caminha pelos corredores e encontra um pessoa na sua frente, esse inviduo parecia diferente");
+			System.out.println("Ethan caminha pelos corredores e encontra uma pessoa na sua frente, esse inviduo parecia diferente");
+			System.out.println("O Individuo não se parecia com nenhum guarda que Ethan havia visto, ele usava roupas diferentes, o individuo olha para ethan e logo se aproxima dele.");
+			System.out.println("Ethan aponta sua arma e pergunta para o individuo misterioso quem era ele, ele olha para ethan e se apresenta como Magnus Montgomery.");
+			System.out.println("Magnus Montgomery: Se acalme meu jovem não precisa apontar essa arma para mim, não irei te machucar, me chamo Magnus Montgomery.");
+			System.out.println("Ethan: O que você faz aqui dentro, como posso saber se você não é nenhum inimigo ou algúem que faz parte do olho secreto.");
+			System.out.println("Magnus Montgomery: Não precisa se preocupar seu eu fosse algum guarda eu já teria te atacado, poderia abaixar a sua arma/n");
+			
+			
+			int escolha;
+			do {
+				System.out.println("1 - Abaixar a arma e perguntar para Magnus o que ele estava fazendo naquele lugar");
+	            System.out.println("2 - Continuar com a arma apontada e ameaçar Magnus a falar o que ele estava fazendo naquele lugar ");
+	        
+	            escolha = input.nextInt();
+	            input.nextLine();
+	            
+	            if (escolha == 1) {
+	                System.out.println("Etha: o que você está fazendo nesse lugar, porque você está aqui sozinho.");
+	            } else if (escolha == 2) {
+	                System.out.println("Ethan: \"NÃO IREI ABAIXAR MINHA ARMA\", COMO POSSO CONFIAR EM ALGUÉM DENTRO DESSE LUGAR");
+	                System.out.println("Magnus Montgomery: tudo bem então meu rapaz, como posso fazer para você acreditar em mim?");
+	                System.out.println("Ethan: me fale o que você está fazendo nesse lugar sozinho?");
+	                
+	            } else {
+	                System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2]:");
+	            }
+			
+			} while (escolha != 1 && escolha != 2 );
+			
+			
+			System.out.println("Magnus Montgomery: Estou investigando essa organização chamada \"O olho secreto\", sou um investigador e estou inestigando essa organização já faz algum tempo");
+			System.out.println("Ethan: tudo bem irei abaixar minha arma vou acreditar em você, me chamo Ethan estou envestigando a organização para descobrir que foi os responsaveis pela morte dos meus pais");
+			System.out.println("Ethan: eles faziam parte da organização e a unica pista que eu tenho é uma mensagem com  nome \"AURORA\" que eu encontrei, por isso estou investigando esse local.");
+			System.out.println("Magnus Montgomery: Já que você está investigando a organização posso te ajudar Ethan, quem sabe a gente possa encontrar os responsaveis pela morte de seus pais");
+			System.out.println("Ethan: Aceita a ajuda de Magnus para continuar investigando o local e encontrar quem foi os responsaveis pela morte de seus pais");
+			System.out.println("Os dois caminham pelo corredores e encontra um sala, dentro dessa sala eles encontrar alguns quadros, documentos e algumas fotos");
+			System.out.println("Ethan percebe que em uma das fotos havia a foto de seus pais, então ele se lembra das risadas da sua mãe a voz do seu pai conversando com ele");
+			System.out.println("Magnus: você está bem Ethan...");
+			System.out.println("Ethan: Lembrei do meus pais sinto falta deles, mas não posso me deixar se distrair");
+			System.out.println("Ethan: vamos continuar investigando talvez a gente encontre alguma informação que possa nos ajudar");
+			System.out.println("Ethan: caminha até uma gaveta e abre ela, nela ele encontra varios papeis e documentos dentre desses documentos, Ethan encontra uma mensagem cheia de numeros mas está dificil para decifrar ");
+			
+			
+//			Enigma 3: A Mensagem Oculta
+			
+			
 			
 
 		}
