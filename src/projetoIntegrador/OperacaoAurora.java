@@ -457,22 +457,12 @@ public class OperacaoAurora {
 	                System.out.println("Ethan: Tudo bem, a gente se encontra aqui de novo quando acabarmos de verificar.");
 	                System.out.println("Você caminha em volta da propriedade abandonada mas não encontra nada.");
 	                System.out.println("Então você resolve voltar até a entrada da casa e aguardar.");
-	                System.out.println("Magnus Montgomery: Ethan, verifiquei nos fundos e não encontrei nada. Você encontrou alguma coisa?");
-	                
-	                do {
-	                    System.out.println("Responda 'Não':");
-	                    resposta = input.nextLine().trim().toLowerCase();
-
-	                    if (resposta.equals("Não")) {
-	                        System.out.println("Ethan: Não, não encontrei nada.");
-	                    } else {
-	                        System.out.println("Resposta inválida. Por favor, responda apenas 'não' para responder a pergunta.");
-	                    }
-	                } while (!resposta.equals("Não"));
-	                
+	                System.out.println("Magnus Montgomery: Ethan, verifiquei nos fundos e não encontrei nada.");
+	                 
 	            } else {
 	                System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2]:");
 	            }
+
 	        
 	        } while (verificar != 1 && verificar != 2);
 
@@ -528,7 +518,7 @@ public class OperacaoAurora {
 //	        Enigma 4: A Prova Final	        
 	        
 	        String[] opcoes = {"A: x = -1 ou x = -3", 
-	                   "B: x = 1 ou x = 3", // resposta correta letra B
+	                   "B: x = 1 ou x = 3", // resposta correta letra C
 	                   "C: x = 2 ou x = -3",
 	                   "D: x = -2 ou x = 3"};  
 	        int vidas = 3;
@@ -575,7 +565,7 @@ public class OperacaoAurora {
 	
 //	  Função responsável por iniciar o QUINTO capitúlo.
 	 
-	static void EncontrarAurora() {
+	static void EncontrarAurora() throws Exception {
 		System.out.println("Capitulo 5: \n");
 	    System.out.println(
 		            "█████╗          ██╗ ██████╗ ██████╗ ███╗   ██╗ █████╗ ██████╗  █████╗     ██████╗  █████╗ ██████╗  █████╗     ███████╗███╗   ██╗ ██████╗ ██████╗ ███╗   ██╗████████╗██████╗  █████╗ ██████╗      █████╗ ██╗   ██╗██████╗  ██████╗ ██████╗  █████╗     ███████╗██╗███╗   ██╗ ██████╗██╗      █████╗ ██╗██████╗ \n" +
@@ -610,22 +600,175 @@ public class OperacaoAurora {
             if (foto.equalsIgnoreCase("Sim")) {
                 System.out.println("Você resolveu mostrar a foto para o Magnus Montgomery.\n");
             } else if (!foto.equalsIgnoreCase("Nao")) {
-                System.out.println("Resposta inválida. Por favor, digite 'Sim' ou 'Nao'.\n");
+                System.out.println("Resposta inválida. Por favor, digite 'Sim'.\n");
             }
         } while (!foto.equalsIgnoreCase("Sim"));
         
         
         System.out.println("Magnus Montgomery: O nome que está escrito parece se chamar \"Aurora\" e esse endereço parece ser de um  templo budista.");
-        System.out.println("Não consigo acreditar que essa mulher seja a Aurora, precisamos ir verificar o mais rapido possivel.");
-        System.out.println("Magnus Montgomery: Esse templo fica um pouco longe de Sin City, o que você acha da gente ir agora verificar?");
+        System.out.println("Ethan: Não consigo acreditar que essa mulher seja a Aurora, precisamos ir verificar o mais rapido possivel.");
+        System.out.println("Magnus Montgomery: Esse templo fica um pouco longe de Sin City, o que você acha da gente ir agora verificar");
+        System.out.println("Ethan: vamos não podemos ficar parados.");
+        System.out.println("Algumas horas depois....");
+        System.out.println("Magnus Montgomery: estamos quase chegando no templo, falta muito pouco só precisamos subir essa montanha.");
+        System.out.println("Ethan: Vamos!!");
+        System.out.println("Ethan: Estamos quase lá, não podemos desistir agora.");
+        System.out.println("Magnus Montgomery: Espere um pouco, acho que estamos sendo seguidos.");
+        System.out.println("Agentes do Olho Secreto: Parados ai você dois não se mexam!!!");
+        System.out.println("Agentes do Olho Secreto: Não podemos deixar que vocês continuem, a jornada de vocês termina agora.");
+        System.out.println("Magnus Montgomery: Ethan precisamos enfrentalos, não podemos deixar que eles nós peguem.");
         
         
+        int confronto;
+		do {
+			System.out.println("1 - Pegar sua arma e atirar nos agente do Olho Secreto.");
+            System.out.println("2 - Correr para as arvores para se proteger.");
+            
+            confronto = input.nextInt();
+            input.nextLine();
+            
+            if (confronto == 1) {
+                
+            	System.out.println("Você pega sua arma para atirar, mas acaba errando os tiros!!");
+            	System.out.println("Você resolve tentar atirar mais uma vez nos agentes.");
+            	System.out.println();
+            } else if (confronto == 2) {
+                System.out.println("Você corre para trás de um arvore para se proteger  e saca sua arma para atirar nos agentes.");
+                System.out.println("Os agentes começam a se aproximar de você.");
+                System.out.println("Você se prepara para entrar em confronto com os agentes.");
+                System.out.println();
+               
+            } else {
+                System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2]:");
+            }
+		
+		} while (confronto != 1 && confronto != 2 );
+		
+		
         
-	}
-	
-	
+		String[] opcoes1 = {"A: x1 = 1, x2 = 6", "B: x1 = 2, x2 = 3", "C: x1 = -2, x2 = 3", "D: x1 = 3, x2 = -2"}; 
+        int vidas1 = 3;
+        boolean agentesVivos1 = true;
+        Random embaralhar1 = new Random();
+        
+        while (agentesVivos1 && vidas1 > 0) {
+            System.out.println("Resolva a equação de segundo grau: x^2 - 5x + 6 = 0");
+            
+            // Embaralhar as opções
+            for (int i = opcoes1.length - 1; i > 0; i--) {
+                int j = embaralhar1.nextInt(i + 1);
+                String temp = opcoes1[i];
+                opcoes1[i] = opcoes1[j];
+                opcoes1[j] = temp;
+            }
+            
+            for (String opcao : opcoes1) {
+                System.out.print(opcao + " ");
+            }
+            System.out.println();
+            
+            String alternativa = input.next();
 
-	
+            if (alternativa.equalsIgnoreCase("B")) {
+                System.out.println("Você acertou! Você matou os dois guardas com dois tiros.\n");
+                agentesVivos1 = false;
+            } else {
+                vidas1--;
+                if (vidas1 == 2) {
+                    System.out.println("Você errou! Você foi atingido pelos guardas de raspão e perdeu uma vida.");
+                } else if (vidas1 == 1) {
+                    System.out.println("Você errou novamente! Você foi atingido com um tiro na perna e perdeu outra vida.");
+                } else {
+                    System.out.println("Você errou pela terceira vez! Você foi acertado pelos guardas na cabeça e perdeu todas as vidas.\n");
+                    Menu();
+                }
+            }
+        }
+	        
+        System.out.println("Magnus Montgomery: Boa Ethan!!. mas ainda resta dois agentes precisamos acabar com eles.");
+        
+        
+        String[] opcoes2 = {"A: x1 = 2, x2 = -8", "B: x1 = 2, x2 = -4", "C: x1 = 4, x2 = -2", "D: x1 = -4, x2 = 2"}; 
+        int vidas2 = 3;
+        boolean agentesVivos2 = true;
+        Random embaralhar2 = new Random();
+      
+        while (agentesVivos2 && vidas2 > 0) {
+            System.out.println("Resolva a equação de segundo grau: x^2 + 2x - 8 = 0");
+            
+            // Embaralhar os números das opções
+            for (int i = 0; i < opcoes2.length; i++) {
+                String[] numeros = opcoes2[i].split(": ")[1].split(", ");
+                int j = embaralhar2.nextInt(numeros.length);
+                String temp = numeros[0];
+                numeros[0] = numeros[j];
+                numeros[j] = temp;
+                opcoes2[i] = opcoes2[i].split(": ")[0] + ": " + numeros[0] + ", " + numeros[1];
+            }
+            
+            for (String opcao : opcoes2) {
+                System.out.print(opcao + " ");
+            }
+            System.out.println();
+            
+            String alternativa = input.next();
+
+            if (alternativa.equalsIgnoreCase("B")) {
+                System.out.println("Você acertou! Você matou os dois guardas com dois tiros.\n");
+                agentesVivos2 = false;
+            } else {
+                vidas2--;
+                if (vidas2 == 2) {
+                    System.out.println("Você errou! Você foi atingido pelos guardas de raspão e perdeu uma vida.");
+                } else if (vidas2 == 1) {
+                    System.out.println("Você errou novamente! Você foi atingido com um tiro na perna e perdeu outra vida.");
+                } else {
+                    System.out.println("Você errou pela terceira vez! Você foi acertado pelos guardas na cabeça e perdeu todas as vidas.\n");
+                    Menu();
+                }
+            }
+        }
+        
+        System.out.println("Magnus Montgomery: finalmente conseguimos, derrotamos todos eles,acho que podemos continuar estamos quase chegando.\n");
+        System.out.println("Exaustos, mas vitoriosos, Magnus e você finalmente chegam ao templo budista. O santuário, um refúgio de paz, se ergue majestoso entre as montanhas diante seus olhos.\n");
+        System.out.println("Monge Ancião: Bem-vindos, viajantes. No que posso ajudalos?\n");
+        
+       
+        int responder;
+
+        do {
+        	System.out.println("1 - Responder ao monge ancião que está procurando a mulher da foto\n");
+        	System.out.println("Ethan: Estou procurando a mulher da foto ela se chama AURORA");
+            while (!input.hasNextInt()) {
+                System.out.println("Opção inválida. Por favor, digite um número.");
+                input.next(); 
+            }
+            responder = input.nextInt();
+
+            if (responder != 1) {
+                System.out.println("Opção inválida. Digite 1 para responder ao monge ancião.");
+            }
+        } while (responder != 1);
+        
+        
+        System.out.println("Monge Ancião: UHMMMMMMMMMM...");
+        System.out.println("Agora lembrei tem uma mulher com esse nome aqui, vou apresentala a vocês, me siguam que irei mostrar o caminho.");
+        System.out.println("Monge Ancião: Veja ela está sentada ali perto dos jardins, podem ir flar com ela.");
+        System.out.println("Ethan: Aurora é você?");
+        System.out.println("AURORA: Quem são vocês, como você sabem meu nome.");
+        System.out.println("Ethan: me chamo Etahn e esse ao meu lado se chama Magnus Montgomery, estavamos procurando por você atrás de respostas.");
+        System.out.println("Ethan: Você fazia parte do Olho Secreto e trabalhou junto com os meus pais que foram mortos");
+        System.out.println("AURORA: Eu não sou mais aquela mulher. Eu encontrei a paz aqui, mas sei que preciso acertar minhas contas com o passado. Vocês merecem respostas.");
+        System.out.println("AURORA: Tudo começou quando eu descobri os segredos do Olho Secreto. Mas acabei sendo traida por um membro de alto escalão da organização.");
+        System.out.println("AURORA: Eles me forçaram a particpar da morte de seus pais, eu não queria ter feito aquilo mas fui obrigada não tive outra escolha. ");
+        System.out.println("AURORA: Ameaçaram pessoa que eu conhecia e me ameaçaram se eu não matasse seus pais.");
+        System.out.println("AURORA: Refugiei-me para este templo em busca de redenção, pelo meus atos.");
+        System.out.println("AURORA: Me perdoe Ethan não tive outra escolha.");
+      
+        
+    }
+      
+        
 //	  Função responsável por iniciar o SEXTO capitúlo.
 	 
 	static void Confrontar() {
