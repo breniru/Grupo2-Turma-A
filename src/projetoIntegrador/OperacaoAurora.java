@@ -340,7 +340,7 @@ public class OperacaoAurora {
 
 			
 	        	System.out.println("Magnus Montgomery: Você conseguiu decifrar o codigo Ethan. O que está escrito no documento.");
-	        	System.out.println("Ethan: A mensagem parece ser uma citação de um poema, mas inda não sei sua ligaçào com o nome \"AURORA\", o poema está escrito com as seguintes palavras:");
+	        	System.out.println("Ethan: A mensagem parece ser uma citação de um poema, mas ainda não sei sua ligaçào com o nome \"AURORA\", o poema está escrito com as seguintes palavras:");
 	        	System.out.println("Em uma terra distante, de passado velado,\n" +
 	                    "Jaz uma propriedade, outrora iluminada.\n" +
 	                    "Erguida em segredo, nos confins do oculto,\n" +
@@ -568,6 +568,40 @@ public class OperacaoAurora {
 		                }
 		            }
 		        }
+		        
+		        System.out.println("Pratileira: CRRRRREEEEAAAKKKK... THUD!");
+		        System.out.println("Magnus Montgomery: Parece que encontramos uma passagem secreta.");
+		        System.out.println("Magnus Montgomery: Devemos descer e ver onde leva?");
+		        System.out.println("Ethan: Com certeza. Vamos descobrir o que estão escondendo aqui.");
+		        System.out.println("Magnus Montgomery: Fique atento. Não sabemos o que podemos encontrar lá embaixo.");
+		        System.out.println("Magnus Montgomery: Esse lugar parece realmente abandonado, parece que chegamos");
+		        System.out.println("Ethan: Olha para esse lugar parece que realmente eles estiveram por aqui.");
+		        System.out.println("Magnus Montgomery: Ethan!!, venha ver isso aqui.");
+		        System.out.println("Ethan: Não consigo acreditar no que estou vendo, precisamos dar um jeito de impedir isso");
+		        System.out.println("Magnus Montgomery: Realmente, precisamos dar um jeito de impedir esse plano deles");
+		        System.out.println("Magnus Montgomery: Não consigo acreditar que eles estavam planejando fazer algo desse tamanho, isso pode afetar a segurança de todos globalmente");
+		        System.out.println("Ethan: Espere!!,Acho que algo em baixo desses papeis, parece ser uma foto de uma mulher");
+		        System.out.println("Ethan: Atrás da foto está escrito algo parece ser um endereço e um nome, mas não consigo reconhecer nada do que está escrito parece estar escrito em outro idioma");
+		        System.out.println("Magnus Montgomery: Posso dar uma olhada nessa foto?");
+		        
+		        String foto;
+
+		        do {
+		            System.out.println("Mostrar a foto para o Magnus Montgomery? - (Sim)");
+		            foto = input.next();
+
+		            if (foto.equalsIgnoreCase("Sim")) {
+		                System.out.println("Você resolveu mostrar a foto para o Magnus Montgomery.\n");
+		            } else if (!foto.equalsIgnoreCase("Nao")) {
+		                System.out.println("Resposta inválida. Por favor, digite 'Sim' ou 'Nao'.\n");
+		            }
+		        } while (!foto.equalsIgnoreCase("Sim"));
+		        
+		        
+		        System.out.println("Magnus Montgomery: O nome que está escrito parece se chamar \"Aurora Sinclar\" e esse endereço parece ser de um templo budista no Himalaia.");
+		        System.out.println("Magnus Montgomery: Será que essa mulher é a tal Aurora? Para ter certeza precisamos ir verificar o mais rapido possivel se realmente é ela.");
+		        System.out.println("Magnus Montgomery: Esse templo fica longe de Sin City, mas o que você acha da gente ir agora checar?");
+		        System.out.println("Ethan: Acho uma boa ideia, vamos sim!");
 
 			}
 	
@@ -578,46 +612,50 @@ public class OperacaoAurora {
 	static void EncontrarAurora() {
 		System.out.println("Capitulo 5: \n");
 	    System.out.println(
-		            "█████╗          ██╗ ██████╗ ██████╗ ███╗   ██╗ █████╗ ██████╗  █████╗     ██████╗  █████╗ ██████╗  █████╗     ███████╗███╗   ██╗ ██████╗ ██████╗ ███╗   ██╗████████╗██████╗  █████╗ ██████╗      █████╗ ██╗   ██╗██████╗  ██████╗ ██████╗  █████╗     ███████╗██╗███╗   ██╗ ██████╗██╗      █████╗ ██╗██████╗ \n" +
+		            "█████╗           ██╗ ██████╗ ██████╗ ███╗   ██╗ █████╗ ██████╗  █████╗     ██████╗  █████╗ ██████╗  █████╗     ███████╗███╗   ██╗ ██████╗ ██████╗ ███╗   ██╗████████╗██████╗  █████╗ ██████╗      █████╗ ██╗   ██╗██████╗  ██████╗ ██████╗  █████╗     ███████╗██╗███╗   ██╗ ██████╗██╗      █████╗ ██╗██████╗ \n" +
 		            "██╔══██╗         ██║██╔═══██╗██╔══██╗████╗  ██║██╔══██╗██╔══██╗██╔══██╗    ██╔══██╗██╔══██╗██╔══██╗██╔══██╗    ██╔════╝████╗  ██║██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗    ██╔══██╗██║   ██║██╔══██╗██╔═══██╗██╔══██╗██╔══██╗    ██╔════╝██║████╗  ██║██╔════╝██║     ██╔══██╗██║██╔══██╗\n" +
 		            "███████║         ██║██║   ██║██████╔╝██╔██╗ ██║███████║██║  ██║███████║    ██████╔╝███████║██████╔╝███████║    █████╗  ██╔██╗ ██║██║     ██║   ██║██╔██╗ ██║   ██║   ██████╔╝███████║██████╔╝    ███████║██║   ██║██████╔╝██║   ██║██████╔╝███████║    ███████╗██║██╔██╗ ██║██║     ██║     ███████║██║██████╔╝\n" +
 		            "██╔══██║    ██   ██║██║   ██║██╔══██╗██║╚██╗██║██╔══██║██║  ██║██╔══██║    ██╔═══╝ ██╔══██║██╔══██╗██╔══██║    ██╔══╝  ██║╚██╗██║██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██╗██╔══██║██╔══██╗    ██╔══██║██║   ██║██╔══██╗██║   ██║██╔══██╗██╔══██║    ╚════██║██║██║╚██╗██║██║     ██║     ██╔══██║██║██╔══██╗\n" +
-		            "██║  ██║    ╚█████╔╝╚██████╔╝██║  ██║██║ ╚████║██║  ██║██████╔╝╚██████╔╝    ██║     ██║  ██║██║  ██║██║  ██║    ███████╗██║ ╚████║╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║██║  ██║██║  ██║    ██║  ██║╚██████╔╝██║  ██║╚██████╔╝██║  ██║██║  ██║    ███████║██║██║ ╚████║╚██████╗███████╗██║  ██║██║██║  ██║\n" +
-		            "╚═╝  ╚═╝     ╚════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝  ╚═════╝     ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝    ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝\n");
+		            "██║  ██║    ╚█████╔╝╚██████╔╝██║  ██║██║ ╚████║██║  ██║██████╔╝██║  ██║    ██║     ██║  ██║██║  ██║██║  ██║    ███████╗██║ ╚████║╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║██║  ██║██║  ██║    ██║  ██║╚██████╔╝██║  ██║╚██████╔╝██║  ██║██║  ██║    ███████║██║██║ ╚████║╚██████╗███████╗██║  ██║██║██║  ██║\n" +
+		            "╚═╝  ╚═╝     ╚════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝    ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝    ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝\n");
 		        
+	    
+	    System.out.println("A jornada ao Himalaia é árdua e repleta de perigos. Eles enfrentam tempestades de neve, avalanches e animais selvagens, por todo o caminho.\n");
+	    System.out.println("Finalmete após semanas de viagem, eles chegam ao templo budista, um santuário pacífico escondido entre as montanhas.\n");
+	    
+	    System.out.println("Ethan: Até que enfim chegamos Magnus, essa viagem foi longa.");
+	    System.out.println("Magnus Montgomery: Concordo com você Ethan, mas o importante é que chegamos. Agora vamos ver se achamos essa tal Aurora Sinclair!\n\n");
+	    
+	    System.out.println("Ao adentrar no templo, Magnus e Ethan se deparam com um monge, que no mesmo momento os perguntam o que estão fazendo lá:\n");
+	    
+	    System.out.println("Monge: Olá o que trazem vocês aqui ?");
+	    System.out.println("Ethan: Oi monge, tudo bem? Estamos procurando uma mulher chamada Aurora Sinclair.");
+	    System.out.println("Magnus Montgomery: Sim, isso mesmo.");
+	    System.out.println("Ethan: Você por algum acaso conhece alguém que veio ou esteja aqui com esse nome?\n");
+	    
+	    System.out.println("Muito tempo atrás, ao Aurora chegar no templo pedindo refugio ao monge, ela pediu para que nunca dissesse que a");
+	    System.out.println(" mesma estava lá, pois tinham pessoas à procurando e querendo sua morte. Então quando Ethan perguntou sobre ela, o monge disse:\n"); 
+	    
+	    System.out.println("Monge: Não, nunca veio ninguém aqui com esse nome!");
+	    System.out.println("Ethan: Tem certeza senhor?");
+	    System.out.println("Monge: Sim, tenho muito certeza!\n");
+	    System.out.println("Monge: Mas qual o seu nome Jovem?");
+	    System.out.println("Ethan: Meu nome é Ethan e o dele é Magnus Montgomery");
+	    
+	    System.out.println("Mal eles sabiam que Aurora estava o tempo todo escutando a conversa, mas ja estava planejavam sairn quando escuto o nome de Ethan. Na mesma hora ela o reconheceu.");
+	    System.out.println("Ficou na dúvida se parava de escutar a conversa e iria se revelar para Ethan ou se deixava tudo como estava. Depois de tanta agonia, ela resolveu ir falar com ele:\n");
+	    
+	    System.out.println("Aurora Sinclair: Sim Ethan estou aqui!");
+	    System.out.println("Ethan: Quem é você? Não me diga que é Aurora.");
+	    System.out.println("Aurora Sinclair: Sim, sou eu mesma e já até sei o motivo de você estar aqui.\n");
+	    
+	    System.out.println("Aurora revela sua história. Ela confirma que foi traída por um membro de alto escalão de \"O Olho Secreto\" e coagida a ");
+	    System.out.println("participar da morte dos pais de [NOME DO JOGADOR]. No entanto, ela alega que não agiu por maldade, mas sob ameaça de morte dela "); 
+	    System.out.println("e de pessoas próximas. Consumida pelo remorso, fugiu da organização e buscou refúgio no templo, buscando redenção por seus atos.");
+	    
+	    
 		
-	    System.out.println("Pratileira: CRRRRREEEEAAAKKKK... THUD!");
-        System.out.println("Magnus Montgomery: Parece que encontramos uma passagem secreta.");
-        System.out.println("Magnus Montgomery: Devemos descer e ver onde leva?");
-        System.out.println("Ethan: Com certeza. Vamos descobrir o que estão escondendo aqui.");
-        System.out.println("Magnus Montgomery: Fique atento. Não sabemos o que podemos encontrar lá embaixo.");
-        System.out.println("Magnus Montgomery: Esse lugar parece realmente abandonado, parece que chegamos");
-        System.out.println("Ethan: Olha para esse lugar parece que realmente eles estiveram por aqui.");
-        System.out.println("Magnus Montgomery: Ethan!!, venha ver isso aqui.");
-        System.out.println("Ethan: Não consigo acreditar no que estou vendo, precisamos dar um jeito de impedir isso");
-        System.out.println("Magnus Montgomery: Realmente, precisamos dar um jeito de impedir esse plano deles");
-        System.out.println("Magnus Montgomery: Não consigo acreditar que eles estavam planejando fazer algo desse tamanho, isso pode afetar a segurança de todos globalmente");
-        System.out.println("Ethan: Espere!!,Acho que algo em baixo desses papeis, parece ser uma foto de uma mulher");
-        System.out.println("Ethan: Atrás da foto está escrito algo parece ser um endereço e um nome, mas não consigo reconhecer nada do que está escrito parece estar escrito em outro idioma");
-        System.out.println("Magnus Montgomery: Posso dar uma olhada nessa foto?");
-        
-        String foto;
-
-        do {
-            System.out.println("Mostrar a foto para o Magnus Montgomery? - (Sim)");
-            foto = input.next();
-
-            if (foto.equalsIgnoreCase("Sim")) {
-                System.out.println("Você resolveu mostrar a foto para o Magnus Montgomery.\n");
-            } else if (!foto.equalsIgnoreCase("Nao")) {
-                System.out.println("Resposta inválida. Por favor, digite 'Sim' ou 'Nao'.\n");
-            }
-        } while (!foto.equalsIgnoreCase("Sim"));
-        
-        
-        System.out.println("Magnus Montgomery: O nome que está escrito parece se chamar \"Aurora\" e esse endereço parece ser de um  templo budista.");
-        System.out.println("Não consigo acreditar que essa mulher seja a Aurora, precisamos ir verificar o mais rapido possivel.");
-        System.out.println("Magnus Montgomery: Esse templo fica um pouco longe de Sin City, o que você acha da gente ir agora verificar?");
+	   
         
         
         
@@ -724,9 +762,12 @@ public class OperacaoAurora {
 	 */
 	public static void main(String[] args) throws Exception {
 		// Iniciando o jogo com o menu
-		Menu();
-
-		// Ao final de tudo o scanner é encerrado.
-		input.close();
+//		Menu();
+//
+//		// Ao final de tudo o scanner é encerrado.
+//		input.close();
+		
+		EncontrarAurora();
+		
 	}
 }
