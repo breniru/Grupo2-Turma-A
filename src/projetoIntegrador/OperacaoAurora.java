@@ -68,7 +68,7 @@ public class OperacaoAurora {
 
 		System.out.println("Capitulo 2:\n");
 		System.out.println(
-				"██████╗ ███████╗███████╗██╗   ██╗███████╗███╗   ██╗██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ \n"
+				          "██████╗ ███████╗███████╗██╗   ██╗███████╗███╗   ██╗██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ \n"
 						+ "██╔══██╗██╔════╝██╔════╝██║   ██║██╔════╝████╗  ██║██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔═══██╗\n"
 						+ "██║  ██║█████╗  ███████╗██║   ██║█████╗  ██╔██╗ ██║██║  ██║███████║██╔██╗ ██║██║  ██║██║   ██║\n"
 						+ "██║  ██║██╔══╝  ╚════██║╚██╗ ██╔╝██╔══╝  ██║╚██╗██║██║  ██║██╔══██║██║╚██╗██║██║  ██║██║   ██║\n"
@@ -82,139 +82,139 @@ public class OperacaoAurora {
 						+ " ╚═════╝      ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝     ╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝   ╚═╝    ╚═════╝    ");
 
 		System.out.println();
-		System.out.println(
-				"Já verifiquei quase todos os documento parece que não tem nada nesse lugar. Esse parece ser o ultimo documento, parece ter algo escrito nele.\n");
+		System.out.println("Já verifiquei quase todos os documento parece que não tem nada nesse lugar. Esse parece ser o ultimo documento, parece ter algo escrito nele.\n");
 
 		String documento;
 
 		do {
-			System.out.println("Você encontrou um documento. Deseja ler? (Sim/Nao)");
+			System.out.println( "Você encontrou um documento. Deseja ler? (Sim/Não)");
 			documento = input.next();
 
-			if (documento.equalsIgnoreCase("Sim")) {
+			if (documento.equals("Sim") || documento.equals("sim")) {
 				System.out.println("Você resolveu ler o documento!!\n");
-			} else if (documento.equalsIgnoreCase("Nao")) {
-				while (!documento.equalsIgnoreCase("Sim")) {
-					System.out.println("Você escolheu não ler o documento. Deseja reconsiderar? (Sim/Nao)");
+
+			} else if (documento.equals("Não") || documento.equals("não")) {
+
+				while (!(documento.equals("Sim") || documento.equals("sim"))) {
+					System.out.println("Você escolheu não ler o documento. Deseja reconsiderar? (Sim/Não)");
 					documento = input.next();
 				}
 				System.out.println("Você resolveu ler o documento.\n");
 			} else {
-				System.out.println("Resposta inválida. Por favor, digite 'Sim' ou 'Nao'.\n");
+				System.out.println("Resposta inválida. Por favor, digite 'Sim' ou 'Não'.\n");
 			}
-		} while (!documento.equalsIgnoreCase("Sim"));
-
-		System.out.println(
-				"No documento estava escrito algumas informações sobre seus pais e uma organizaçào secreta que pertencia a eles conhecida como \"O Olho Secreto\".\n");
-		System.out.println(
-				"Uma organização secreta obscura especializada em segurança nacional e em inteligência liderada pelo seus pais que aparentemente,foram vítimas de uma traição dentro da própria organização.\n");
-		System.out.println(
-				"A revelaçào acaba sendo desvastadora para Ethan, o que acaba fazendo com que  ele ficasse muito confuso e devastado com tudo que ele tinha lido no documento.Então Ethan se vê diante de um dilema cruel.\n");
-		System.out.println(
-				"Será que realmente Devo Seguir em frente com minha vida e tentar esquecer tudo isso ou devo continuar procurando a verdade sobre a morte do meus pais e sobre essa organização chamada O olho Secreto.\n");
+		} while (!(documento.equals("Sim") || documento.equals("sim")));
+		
+		
+		System.out.println("No documento estava escrito algumas informações sobre seus pais e uma organizaçào secreta que pertencia a eles conhecida como \"O Olho Secreto\".\n");
+		System.out.println("Uma organização secreta obscura, especializada em segurança nacional liderada pelo seus pais que aparentemente foram vítimas de uma traição dentro da própria organização.\n");
+		System.out.println("A revelaçào acaba sendo desvastadora para Ethan, o que acaba fazendo com que  ele ficasse muito confuso e devastado com tudo que ele tinha lido no documento. Ethan se vê diante de um dilema cruel.\n");
+		System.out.println("Será que realmente Devo Seguir em frente com minha vida e tentar esquecer tudo isso ou devo continuar procurando a verdade sobre a morte do meus pais e sobre essa organização chamada O Olho Secreto.\n");
 		System.out.println();
 
-		int caminho;
+		
+		int caminho = 0;
+		
+		while (caminho != 2) {
+			System.out.println("Escolha uma opção:");
+            System.out.println("1 - Seguir em frente com sua vida e ignorar tudo que você tenha lido\n");
+            System.out.println("2 - Embarcar em uma jornada perigosa para desvendar a verdade sobre seus pais e a organização obscura à qual eles pertenciam.\n");
+
+            if (input.hasNextInt()) {
+                caminho = input.nextInt();
+                if (caminho == 1) {
+                    System.out.println("Você decidiu seguir em frente com sua vida e ignorar tudo que você leu. Mas será que essa é realmente uma boa decisão!!\n");
+                } else if (caminho == 2) {
+                    System.out.println("Você escolheu embarcar em uma jornada perigosa em busca da verdade sobre seus pais e essa organização obscura a qual eles fizeram parte.\n");
+                    
+                    System.out.println("Sua sede de justiça e a busca por respostas o impulsionam a seguir em frente. Você decide infiltrar-se no Olho Secreto e desvendar seus segredos e descobrir quem foi o responsável pela morte de seus pais.\n");
+                    System.out.println("A missão vai ser árdua e repleta de perigos, mas você está determinado a fazer o que for preciso para obter justiça e honrar a memória de seus pais.\n");
+                } else {
+                    System.out.println("Opção inválida. Por favor, escolha apenas [1] ou [2]:\n");
+                }
+                } else {
+                System.out.println("Opção inválida. Por favor, escolha apenas [1] ou [2]:\n");
+                input.next(); 
+            }
+        }
+
+		System.out.println("Ethan: Preciso continuar não posso desistir agora, preciso encontrar alguns equipamentos se eu quiser me enfiltrar na organização, lembro de ter passado por uma loja enquanto interrogava alguns informamantes.\n");
+		System.out.println("Ethan: Aquele local era obscuro, é cheio de criminosos,bandidos,guangues preciso tomar cuidado, lembro que esse local ficava escondido em Sin City.\n");
+		System.out.println("Algumas horas depois...\n");
+		System.out.println("Ethan: Finalmente cheguei. Esse lugar é sujo, as pessoas não param de encarar e as paredes estào cheias de rachaduras, se eu me lembro a loja está proxima.\n");
+		System.out.println("Você continua caminhando até chegar na loja, você entra na loja e encontra um senhor barbudo e careca, o vendedor pegunta para você.\n");
+		System.out.println("???: Bem Vindo rapaz. O que você procura?\n");
+		
+		int escolha = 0;
+
 		do {
-			System.out.println("1 - Seguir em frente com sua vida e ignorar tudo que tenha lido\n");
-			System.out.println(
-					"2 - Embarcar em uma jornada perigosa para desvendar a verdade sobre seus pais e a organização obscura à qual eles pertenciam.");
+			System.out.println("Escolha uma opção:");
+			System.out.println("1 - Responder ao vendedor que está procurando equipamentos e roupas.");
+			System.out.println("2 - Perguntar o nome do vendedor.");
 
-			caminho = input.nextInt();
-			if (caminho == 1) {
-				System.out.println(
-						"Você decidiu seguir em frente com sua vida e ignorar tudo que você leu. Mas será que essa é realmente um boa descisão!!\n");
-			} else if (caminho == 2) {
-				System.out.println();
-				System.out.println(
-						"Você escolheu embarcar em uma jornada perigosa em busca da verdade sobre seus pais e a organização obscura.\n");
-				System.out.println(
-						"Sua sede de justiça e a busca por respostas o impulsionam a seguir em frente. você decide infiltrar-se no Olho Secreto e desvendar seus segredos e descobrir quem foi o responsável pela morte de seus pais.\n");
-				System.out.println(
-						"A missão vai ser árdua e repleta de perigos, mas Ethan está determinado a fazer o que for preciso para obter justiça e honrar a memória de seus pais.\n");
+			if (input.hasNextInt()) {
+				escolha = input.nextInt();
+				if (escolha == 1 || escolha == 2) {
+					switch (escolha) {
+					case 1:
+						System.out.println("Ethan: Estou procurando alguns equipamentos e roupas. Vou precisar para uma missão.");
+						break;
+					case 2:
+						System.out.println("Ethan: Posso saber qual o seu nome?");
+						System.out.println("???: Rapaz vejo que você não é desse lugar.");
+						System.out.println("Ethan: Como você sabe dessa informação?");
+						System.out.println("???: Você não parece ter a aparência de um criminoso.");
+						System.out.println("Ethan: Eu realmente não faço parte desse lugar obscuro e sujo, só estou de passagem.");
+						System.out.println("???: Hahahaha! Bom, não tenho interesse em saber quais são seus motivos para você estar visitando esse lugar.");
+						System.out.println("???: O pessoal por aqui me chama de Victor.");
+						System.out.println("Ethan: Estou procurando alguns equipamentos e roupas, preciso desses equipamentos para uma missão.\n");
+						break;
+					}
+				} else {
+					System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2].\n");
+				}
 			} else {
-				System.out.println("Opção inválida. Por favor, escolha apenas [1] ou [2]:");
+				System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2].\n");
+				input.next();
 			}
-
-		} while (caminho != 2);
-
-		System.out.println(
-				"Preciso continuar não posso desistir agora, preciso encontrar alguns equipamentos se eu quiser me enfiltrar na organização, lembro de ter passado por uma loja enquanto interrogava alguns informamantes.\n");
-		System.out.println(
-				"Aquele local era obscuro, é cheio de criminosos,bandidos,guangues preciso tomar cuidado, lembro que esse local ficava escondido em Sin City.\n");
-		System.out.println(
-				"Finalmente cheguei. Esse lugar é sujo, as pessoas não param de encarar e as paredes estào cheias de rachaduras, se eu me lembro a loja está proxima.\n");
-		System.out.println(
-				"Você continua caminhando até chegar na loja, você entra na loja e encontra um senhor barbudo e careca, o vendedor pegunta para você.\n");
-		System.out.println("???:Bem Vindo rapaz. O que você procura?\n");
-
-		int escolha;
-		do {
-			System.out.println("1 - Responder ao vendendor que está procurando equipamentos e roupas");
-			System.out.println("2 - Perguntar o nome do vendedor");
-
-			escolha = input.nextInt();
-			input.nextLine();
-
-			if (escolha == 1) {
-				System.out.println("Estou procurando alguns equipamentos e roupas, preciso ir em uma missão.");
-			} else if (escolha == 2) {
-				System.out.println("Ethan: Você olha para o vendedor e pergunta como ele se chamava.");
-				System.out
-						.println("???: O vendendor olha para o seu rosto e responde, vejo que você não é desse lugar.");
-				System.out.println("Ethan: como você sabe dessa informação?");
-				System.out.println("???: Você não parece ter a aparência de um criminoso.");
-				System.out.println(
-						"Ethan: Eu realmente não faço parte desse lugar obscuro e sujo, só estou de passagem.");
-				System.out.println(
-						"???: Hahahaha!. Bom não tenho interesse em saber quais são seus motivos para você estar visitando esse lugar.");
-				System.out.println("???: o pessoal por aqui me chama de Victor.");
-				System.out.println(
-						"Ethan: estou procurando alguns equipamentos e roupas victor, preciso desses equipamentos para uma missão.");
-
-			} else {
-				System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2]:");
-			}
-
 		} while (escolha != 1 && escolha != 2);
 
-		System.out.println("você está na loja certa tenho alguma roupas e equipamentos do que você precisa.\n");
-		System.out.println("Ethan: preciso de um traje apropriado, uma mascara, uma identidade falsa e uma arma.\n");
-		System.out.println(
-				"Vou providenciar para você espere um pouco, aqui está tudo o que você pediu era isso que você precisava?\n");
-		System.out.println("Ethan: sim está tudo certo, pode ficar com o troco.\n");
-		System.out.println("Tome cuidado e vê se não morre em sua missão, afinal me preocupo com meus clientes.\n");
-		System.out.println(
-				"Ethan: você se preocupa é com o dinheiro, mas espero que eu não tenha que voltar para esse lugar denovo.\n");
-		System.out.println("Hahahaha, tome cuidado");
-		System.out.println("Agora já posso ir até o Olho Secreto, Espero descobrir toda a verdade.\n");
+		System.out.println("Vendedor: Você está na loja certa tenho alguma roupas e equipamentos do que você precisa.");
+		System.out.println("Ethan: Vou precisar de um traje apropriado, uma mascara, uma identidade falsa e uma arma.");
+		System.out.println("Vendedor: Vou providenciar para você espere um pouco, aqui está tudo o que você pediu era isso que você precisava?");
+		System.out.println("Ethan: Sim está tudo certo, pode ficar com o troco.");
+		System.out.println("Vendedor: Tome Cuidado e vê se não morre em sua missão, afinal me preocupo com meus clientes.");
+		System.out.println("Ethan: Você se preocupa é com o dinheiro, mas espero que eu não tenha que voltar para esse lugar denovo.");
+		System.out.println("Vendedor: Hahahaha, tome cuidado.");
+		System.out.println("Ethan: Bom acho posso ir até o Olho Secreto, Espero descobrir toda a verdade.\n");
 
 //		Enigma 2: O Código Secreto:
 
-		System.out.println(
-				"Você chega até a base do olho secreto e consegue se infiltrar na base sem ser visto pelos guardas.\n");
-		System.out.println(
-				"Ao se infiltrar na base você se depara com um computador protegido por um código complexo.\n");
-		System.out.println(
-				"O acesso a porta está bloqueado e tudo depende da decifração do código, que parece ser um criptograma elaborado.\n");
+		System.out.println("Você chega até a base do olho secreto e consegue se infiltrar na base sem ser visto pelos guardas.\n");
+		System.out.println("Ao se infiltrar na base você se depara com um computador protegido por um código complexo.\n");
+		System.out.println("O acesso a porta está bloqueado e tudo depende da decifração do código, que parece ser um criptograma elaborado.\n");
 
-		String respostaCorreta = "A"; // a resposta correta letra A
+		 String respostaCorreta = "A"; // a resposta correta letra A
+	        String respostaUsuario;
 
-		while (true) {
-			System.out.println("Qual é o resultado de 2^3 * 2^2?");
-			System.out.println("A) 2^5");
-			System.out.println("B) 2^6");
-			System.out.println("C) 2^4");
-
-			String respostaUsuario = input.nextLine();
-
-			if (respostaUsuario.equals(respostaCorreta)) {
-				System.out.println("Você conseguiu destravar a porta!\n");
-				break;
-			} else {
-				System.out.println("Codigo Errado, acesso negado!!");
-			}
-		}
+	        // Pergunta e opções
+	        System.out.println("Qual é o resultado de 2^3 * 2^2?");
+	        System.out.println("A) 2^5");
+	        System.out.println("B) 2^6");
+	        System.out.println("C) 2^4");
+	        
+	        boolean respostaIncorreta = false; 
+	        while (true) {
+	            respostaUsuario = input.nextLine();
+	            if (!respostaIncorreta && !respostaUsuario.equalsIgnoreCase(respostaCorreta)) {
+	              respostaIncorreta = true;
+	            } else if (respostaUsuario.equalsIgnoreCase(respostaCorreta)) {
+	                System.out.println("Você conseguiu destravar a porta!\n");
+	                break;
+	            } else {
+	            	System.out.println("Codigo Invalido, tente novamente.");
+	            }
+	        }
 
 	}
 
@@ -224,22 +224,18 @@ public class OperacaoAurora {
 		System.out.println("Capitulo 3:\n");
 		System.out.println();
 		System.out.println(
-				"███████╗███╗   ███╗    ██████╗ ██╗   ██╗███████╗ ██████╗ █████╗     ██████╗  █████╗     ██╗   ██╗███████╗██████╗ ██████╗  █████╗ ██████╗ ███████╗\n"
+				          "███████╗███╗   ███╗    ██████╗ ██╗   ██╗███████╗ ██████╗ █████╗     ██████╗  █████╗     ██╗   ██╗███████╗██████╗ ██████╗  █████╗ ██████╗ ███████╗\n"
 						+ "██╔════╝████╗ ████║    ██╔══██╗██║   ██║██╔════╝██╔════╝██╔══██╗    ██╔══██╗██╔══██╗    ██║   ██║██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝\n"
 						+ "█████╗  ██╔████╔██║    ██████╔╝██║   ██║███████╗██║     ███████║    ██║  ██║███████║    ██║   ██║█████╗  ██████╔╝██║  ██║███████║██║  ██║█████╗  \n"
 						+ "██╔══╝  ██║╚██╔╝██║    ██╔══██╗██║   ██║╚════██║██║     ██╔══██║    ██║  ██║██╔══██║    ╚██╗ ██╔╝██╔══╝  ██╔══██╗██║  ██║██╔══██║██║  ██║██╔══╝  \n"
 						+ "███████╗██║ ╚═╝ ██║    ██████╔╝╚██████╔╝███████║╚██████╗██║  ██║    ██████╔╝██║  ██║     ╚████╔╝ ███████╗██║  ██║██████╔╝██║  ██║██████╔╝███████╗\n"
-						+ "╚══════╝╚═╝     ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝ ╚═════╝╚═╝  ╚═╝    ╚═════╝ ╚═╝  ╚═╝      ╚═══╝  ╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝");
+						+ "╚══════╝╚═╝     ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝ ╚═════╝╚═╝  ╚═╝    ╚═════╝ ╚═╝  ╚═╝      ╚═══╝  ╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝\n");
 
 		System.out.println();
-		System.out.println(
-				"Através de sua inteligência e perspicácia, Ethan consegue se infiltra dentro do Olho Secreto.\n");
-		System.out.println(
-				"Ethan começa a caminhar pelos corredores e logo vê dois guardas na sua frente parados conversando.\n");
-		System.out.println(
-				"Ethan precisava dar um jeito de passar pelos dois guardas para que ele podesse continuar, então ele resolve enfrentar os dois guardas.\n");
-		System.out.println(
-				"Ethan pega sua arma e resolve atirar nos dois guardas, ele estava um pouco nevorso e sua mira não estava muito boa.\n");
+		System.out.println("Através de sua inteligência e perspicácia, você consegue se infiltra dentro do Olho Secreto.\n");
+		System.out.println("Ethan: Esses corredores parecem gigantes, preciso me esconder não posso deixar que os guardas me vejam.\n");
+		System.out.println("Ethan: Preciso dar um jeito de passar por esses dois guardas, sem chamar atenção.\n");
+		System.out.println("Você pega sua arma e resolve atirar nos dois guardas, você estava um pouco nevorso e sua mira não estava muito boa.\n");
 
 //			Conta para acerta os guardas
 
@@ -272,10 +268,10 @@ public class OperacaoAurora {
 			} else {
 				vidas--;
 				if (vidas == 2) {
-					System.out.println("Você errou! Você foi atingido pelos guardas de raspão e perdeu uma vida.");
+					System.out.println("Você errou! Você foi atingido pelos guardas de raspão e perdeu uma vida.\n");
 				} else if (vidas == 1) {
 					System.out.println(
-							"Você errou novamente! Você foi atingido com um tiro na perna e perdeu outra vida.");
+							"Você errou novamente! Você foi atingido com um tiro na perna e perdeu outra vida.\n");
 				} else {
 					System.out.println(
 							"Você errou pela terceira vez! Você foi acertado pelos guardas na cabeça e perdeu todas as vidas.\n");
@@ -284,97 +280,104 @@ public class OperacaoAurora {
 			}
 		}
 
-		System.out.println(
-				"Finalmente consegui matar os dois guardas, nào posso parar agora preciso continuar seguindo em frente.\n");
-		System.out.println(
-				"Ethan caminha pelos corredores e encontra uma pessoa na sua frente, esse inviduo parecia diferente.\n");
-		System.out.println(
-				"O Individuo não se parecia com nenhum guarda que Ethan havia visto, ele usava roupas diferentes, o individuo olha para ethan e logo se aproxima.\n");
-		System.out.println(
-				"Ethan aponta sua arma e pergunta para o individuo misterioso quem era ele, ele olha para ethan e se apresenta como Magnus Montgomery.\n");
-		System.out.println(
-				"Magnus Montgomery: Se acalme meu jovem não precisa apontar essa arma para mim, não irei te machucar, me chamo Magnus Montgomery.\n");
-		System.out.println(
-				"Ethan: O que você faz aqui dentro, como posso saber se você não é nenhum inimigo ou algúem que faz parte do olho secreto.\n");
-		System.out.println(
-				"Magnus Montgomery: Não precisa se preocupar seu eu fosse algum guarda eu já teria te atacado, poderia abaixar a sua arma\n");
+		System.out.println("Finalmente consegui matar os dois guardas, não posso parar agora preciso continuar seguindo em frente.\n");
+		System.out.println("Ethan: Parece quem tem alguém ali na frente, mas essa pessoa parece diferente.\n");
+		System.out.println("Ethan: Essa pessoa não se parece com nehum guarda que eu tenha visto, será que ele é uma pessoa da organização.\n");
+		System.out.println("Ethan: Ele parece estar se aproximando.Fique parado onde está se não eu atiro.\n");
+		System.out.println("Magnus Montgomery: Se acalme meu jovem não precisa apontar essa arma para mim, não irei te machucar, me chamo Magnus Montgomery.\n");
+		System.out.println("Ethan: O que você faz aqui dentro, como posso saber se você não é nenhum inimigo ou algúem que faz parte do olho secreto.\n");
+		System.out.println("Magnus Montgomery: Não precisa se preocupar seu eu fosse algum inimigo eu já teria te atacado, poderia abaixar a sua arma.\n");
 
-		int escolha;
+		
+		int escolha = 0;
+
 		do {
+			System.out.println("Escolha uma opção:");
 			System.out.println("1 - Abaixar a arma e perguntar para Magnus o que ele estava fazendo naquele lugar");
-			System.out.println(
-					"2 - Continuar com a arma apontada e ameaçar Magnus a falar o que ele estava fazendo naquele lugar ");
+			System.out.println("2 - Continuar com a arma apontada e ameaçar Magnus a falar o que ele estava fazendo naquele lugar ");
 
-			escolha = input.nextInt();
-			input.nextLine();
-
-			if (escolha == 1) {
-				System.out.println("Etha: o que você está fazendo nesse lugar, porque você está aqui sozinho.");
-			} else if (escolha == 2) {
-				System.out.println(
-						"Ethan: \"NÃO IREI ABAIXAR MINHA ARMA\", COMO POSSO CONFIAR EM ALGUÉM DENTRO DESSE LUGAR.\n");
-				System.out.println(
-						"Magnus Montgomery: tudo bem então meu rapaz, como posso fazer para você acreditar em mim?");
-				System.out.println("Ethan: me fale o que você está fazendo nesse lugar sozinho?");
-
+			if (input.hasNextInt()) {
+				escolha = input.nextInt();
+			if (escolha == 1 || escolha == 2) {
+				switch (escolha) {
+				case 1:
+					System.out.println("Ethan: o que você está fazendo nesse lugar, por que você está aqui sozinho.");
+					break;
+				case 2:
+					System.out.println("Ethan: \"NÃO IREI ABAIXAR MINHA ARMA\", COMO POSSO CONFIAR EM ALGUÉM DENTRO DESSE LUGAR.\n");
+			        System.out.println("Magnus Montgomery: tudo bem então meu rapaz, como posso fazer para você acreditar em mim?.");
+			        System.out.println("Ethan: me fale o que você está fazendo nesse lugar sozinho?.");
+					break;
+					}
+				} else {
+					System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2].\n");
+				}
 			} else {
-				System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2]:");
+				System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2].\n");
+				input.next();
 			}
-
 		} while (escolha != 1 && escolha != 2);
-
-		System.out.println(
-				"Magnus Montgomery: Estou investigando essa organização chamada 'O olho secreto'. Sou um investigador, estou investigando essa organização já faz algum tempo.");
-		System.out.println(
-				"Ethan: Tudo bem, irei abaixar minha arma. Vou acreditar em você. Me chamo Ethan, estou investigando a organização para descobrir quem foi responsável pela morte dos meus pais.");
-		System.out.println(
-				"Ethan: Eles faziam parte da organização, e a única pista que tenho é uma mensagem com o nome 'AURORA' que encontrei. Por isso, estou investigando este local.");
-		System.out.println(
-				"Magnus Montgomery: Já que você está investigando a organização, posso te ajudar, Ethan. Quem sabe a gente possa encontrar os responsáveis pela morte de seus pais.");
-		System.out.println(
-				"Ethan: Aceita a ajuda de Magnus para continuar investigando o local e encontrar quem foi responsável pela morte de seus pais?");
-		System.out.println(
-				"Os dois caminham pelos corredores e encontram uma sala. Dentro dessa sala, eles encontram alguns quadros, documentos e algumas fotos.");
-		System.out.println(
-				"Ethan percebe que em uma das fotos há a imagem de seus pais. Então, ele se lembra das risadas de sua mãe e da voz de seu pai conversando com ele.");
+		
+	
+		System.out.println("Magnus Montgomery: Estou investigando essa organização chamada 'O olho secreto'. Sou um investigador, estou investigando essa organização já faz algum tempo.");
+		System.out.println("Ethan: Tudo bem, irei abaixar minha arma. Vou acreditar em você. Me chamo Ethan, estou investigando a organização para descobrir quem foi responsável pela morte dos meus pais.");
+		System.out.println("Ethan: Eles faziam parte da organização, e a única pista que tenho é uma mensagem com o nome 'AURORA' que encontrei. Por isso, estou investigando este local.");
+		System.out.println("Magnus Montgomery: Já que você está investigando a organização, posso te ajudar, Ethan. Quem sabe a gente possa encontrar os responsáveis pela morte de seus pais.");
+		System.out.println("Ethan: tudo bem eu aceito sua ajuda.");
+		System.out.println("Os dois caminham pelos corredores e encontram uma sala. Dentro dessa sala, eles encontram alguns quadros, documentos e algumas fotos.");
+		System.out.println("Ethan percebe que em uma das fotos há a imagem de seus pais. Então, ele se lembra das risadas de sua mãe e da voz de seu pai conversando com ele.");
 		System.out.println("Magnus: Você está bem, Ethan...\n");
 		System.out.println("Ethan: Lembrei dos meus pais. Sinto falta deles, mas não posso me deixar distrair.\n");
-		System.out.println(
-				"Ethan: Vamos continuar investigando. Talvez a gente encontre alguma informação que possa nos ajudar.\n");
-		System.out.println(
-				"Ethan: Encontrei uma gaveta. Dentro dela está cheio de papéis e documentos. Espera acho que encontrei algo entre os documentos, parece ser um tipo de mensagem está cheia de números, mas está difícil de decifrar.\n");
+		System.out.println("Ethan: Vamos continuar investigando. Talvez a gente encontre alguma informação que possa nos ajudar.\n");
+		System.out.println("Ethan: Encontrei uma gaveta. Dentro dela está cheio de papéis e documentos. Espera acho que encontrei algo entre os documentos, parece ser um tipo de mensagem está cheia de números, mas está difícil de decifrar.\n");
 
-//			Enigma 3: A Mensagem Oculta
+		
+//		Enigma 3: A Mensagem Oculta
+	
+		boolean respostaCorreta = false;
+        Random random = new Random();
+       
+     // Embaralhar as alternativas uma vez antes do loop
+        String[] alternativas = {"A) 6x^3 + 8x^2 - 10x", "B) 6x^3 + 8x", "C) 5x^3 + 6x^2 - 8x", "D) 6x^2 + 8x - 5"};
+        for (int i = alternativas.length - 1; i > 0; i--) {
+            int index = random.nextInt(i + 1);
+            String temp = alternativas[index];
+            alternativas[index] = alternativas[i];
+            alternativas[i] = temp;
+        }
 
-		final String respostaCorreta = "A"; // Resposta correta Letra A
-		boolean correto = false;
+        while (!respostaCorreta) {
+            System.out.println("Considere o monômio 2x e o polinômio 3x^2 + 4x - 5.\n");
+            System.out.println("Qual é o resultado da multiplicação desse monômio pelo polinômio?");
+            for (String alternativa : alternativas) {
+                System.out.println(alternativa);
+            }
+            System.out.print("Escolha a alternativa correta: ");
+            String resposta = input.next().toUpperCase();
 
-		do {
-			System.out.println("Considere o monômio 2x e o polinômio 3x^2 + 4x - 5.\n");
-			System.out.println("Qual é o resultado da multiplicação desse monômio pelo polinômio?");
-			System.out.println("A) 6x^3 + 8x^2 - 10x");
-			System.out.println("B) 6x^3 + 8x");
-			System.out.println("C) 5x^3 + 6x^2 - 8x");
-			System.out.println("D) 6x^2 + 8x - 5");
-			System.out.println();
-			System.out.print("Digite a letra da resposta correta: ");
+            if (resposta.length() == 1 && resposta.charAt(0) >= 'A' && resposta.charAt(0) <= 'D') {
+                switch (resposta) {
+                    case "D":
+                        respostaCorreta = true;
+                        System.out.println("\nVocê conseguiu decifrar o código!\n");
+                        break;
+                    case "A":
+                    case "B":
+                    case "C":
+                        System.out.println("\nCódigo inválido. Tente novamente.\n");
+                        break;
+                }
+            } else {
+                System.out.println("\nEntrada inválida. Por favor, insira apenas uma das letras (A, B, C ou D).\n");
+            }
+        }
 
-			String respostaUsuario = input.nextLine();
-
-			if (respostaUsuario.equalsIgnoreCase(respostaCorreta)) {
-				System.out.println("Você conseguiu decifrar o código!\n");
-				correto = true;
-			} else {
-				System.out.println("Tente novamente.");
-			}
-		} while (!correto);
-
+		
 		System.out
 				.println("Magnus Montgomery: Você conseguiu decifrar o codigo Ethan. O que está escrito no documento.");
 		System.out.println(
-				"Ethan: A mensagem parece ser uma citação de um poema, mas inda não sei sua ligaçào com o nome \"AURORA\", o poema está escrito com as seguintes palavras:");
-		System.out.println(
-				"Ethan: A mensagem parece ser uma citação de um poema, mas ainda não sei sua ligaçào com o nome \"AURORA\", o poema está escrito com as seguintes palavras:");
+				"Ethan: A mensagem parece ser uma citação de um poema, mas inda não sei sua ligaçào com o nome \"AURORA\", o poema está escrito com as seguintes palavras:\n");
+		
 		System.out.println("Em uma terra distante, de passado velado,\n" + "Jaz uma propriedade, outrora iluminada.\n"
 				+ "Erguida em segredo, nos confins do oculto,\n" + "Onde mistérios e sombras teciam o seu vulto.\n\n" +
 
@@ -403,54 +406,59 @@ public class OperacaoAurora {
 				+ "Em uma terra esquecida, em um lugar remoto,\n"
 				+ "Onde o Olho Secreto repousa, em seu sagrado loto.\n");
 
-		System.out.println(
-				"Magnus Montgomery: Lembro de ter visto a foto de uma casa em cima da mesa, vou pegar para você!!");
-		System.out.println(
-				"Magnus Montgomery: está vendo parece ser a propriedade que o poema cita, talvez ela tenha relação com a organização");
-		System.out.println(
-				"Ethan: Sim, parerece que está propriedade está ligada a organização, mas não consigo identificar a localização dela");
+		System.out.println("Magnus Montgomery: Lembro de ter visto a foto de uma casa em cima da mesa, vou pegar para você!!");
+		System.out.println("Magnus Montgomery: está vendo parece ser a propriedade que o poema cita, talvez ela tenha relação com a organização.");
+		System.out.println("Ethan: Sim, parerece que está propriedade está ligada a organização, mas não consigo identificar a localização dela.");
 		System.out.println("Magnus Montgomery:HMMMMMMM.....");
-		System.out.println(
-				"Magnus Montgomery:Lembrei de algo, quando estava investigando a organização lembro de ter ouvido algo sobre uma propriedade abandonada no sul de Sin City");
+		System.out.println("Magnus Montgomery:Lembrei de algo, quando estava investigando a organização lembro de ter ouvido algo sobre uma propriedade abandonada no sul de Sin City.");
 		System.out.println("Magnus Montgomery: O que você acha da gente dá uma olhada nessa propriedade?\n");
 
-		int decisao;
-		do {
-			System.out.println("1 - Ir verificar propriedade que o Magnus mencionou.");
-			System.out.println("2 - Verificar se tem alguma outra pista na sala.");
+		
+		int opcao = 0;
 
-			decisao = input.nextInt();
-			input.nextLine();
+        do {
+            System.out.println("Escolha uma opção:");
+            System.out.println("1 - Ir verificar propriedade que o Magnus mencionou.");
+            System.out.println("2 - Verificar se tem alguma outra pista na sala.");
 
-			if (decisao == 1) {
-
-				System.out.println("Vamos, talvez a gente econtre alguma coisa nessa propriedade .");
-				System.out.println();
-			} else if (decisao == 2) {
-				System.out.println(
-						"Ethan: Acho que a gente deveria dar mais uma olhada nessa sala, talvez tenha mais algum coisa por aqui.");
-				System.out.println(
-						"Magnus Montgomery: tudo bem, vou dar mais olhada por aqui, por que você não verifica aqueles quadros ali na parede.");
-				System.out.println(
-						"Magnus Montgomery: na verdade também não encontrei nada, aacho que a gente não deveria peder mais tempo vamos até essa propriedade");
-				System.out.println("tudo bem vamos!!");
-				System.out.println();
-
-			} else {
-				System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2]:");
-			}
-
-		} while (decisao != 1 && decisao != 2);
-
+            // Verifica se o próximo token de entrada é um inteiro
+            if (input.hasNextInt()) {
+                opcao = input.nextInt();
+                if (opcao == 1 || opcao == 2) {
+                    switch (opcao) {
+                        case 1:
+                            System.out.println("Ethan: Vamos, talvez a gente encontre alguma coisa nessa propriedade.");
+                            System.out.println();
+                            break;
+                        case 2:
+                            System.out.println("Ethan: Acho que a gente deveria dar mais uma olhada nessa sala, talvez tenha mais alguma coisa por aqui.");
+                            System.out.println("Magnus Montgomery: tudo bem, vou dar mais uma olhada por aqui, por que você não verifica aqueles quadros ali na parede.");
+                            System.out.println("Magnus Montgomery: na verdade também não encontrei nada, acho que a gente não deveria perder mais tempo, vamos até essa propriedade.");
+                            System.out.println("Ethan: tudo bem, vamos!!");
+                            System.out.println();
+                            break;
+                    }
+                } else {
+                    System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2].\n");
+                }
+            } else {
+                // Limpa o buffer de entrada antes de continuar
+                System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2].\n");
+                input.next(); // Isso limpará o token inválido do scanner
+            }
+        } while (opcao != 1 && opcao != 2);
+		
+		
 	}
+	
 
 //	  Função responsável por iniciar o QUARTO capitúlo.
 
 	static void Alianca() throws Exception {
 
-		System.out.println("Capitulo 4:/n");
+		System.out.println("Capitulo 4:\n");
 		System.out.println(
-				"██╗   ██╗███╗   ███╗     █████╗ ██╗     ██╗ █████╗ ██████╗  ██████╗     ██╗███╗   ██╗███████╗███████╗██████╗ ███████╗██████╗  █████╗ ██████╗  ██████╗ \n"
+				          "██╗   ██╗███╗   ███╗     █████╗ ██╗     ██╗ █████╗ ██████╗  ██████╗     ██╗███╗   ██╗███████╗███████╗██████╗ ███████╗██████╗  █████╗ ██████╗  ██████╗ \n"
 						+ "██║   ██║████╗ ████║    ██╔══██╗██║     ██║██╔══██╗██╔══██╗██╔═══██╗    ██║████╗  ██║██╔════╝██╔════╝██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗\n"
 						+ "██║   ██║██╔████╔██║    ███████║██║     ██║███████║██║  ██║██║   ██║    ██║██╔██╗ ██║█████╗  ███████╗██████╔╝█████╗  ██████╔╝███████║██║  ██║██║   ██║\n"
 						+ "██║   ██║██║╚██╔╝██║    ██╔══██║██║     ██║██╔══██║██║  ██║██║   ██║    ██║██║╚██╗██║██╔══╝  ╚════██║██╔═══╝ ██╔══╝  ██╔══██╗██╔══██║██║  ██║██║   ██║\n"
@@ -458,120 +466,118 @@ public class OperacaoAurora {
 						+ " ╚═════╝ ╚═╝     ╚═╝    ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝     ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ \n");
 
 		System.out.println("Algumas horas depois....\n");
-		System.out.println(
-				"Magnus Montgomery: Chegamos a propriedade fica logo ali na frente, acho melhor a gente ir caminhando.");
+		System.out.println("Magnus Montgomery: Chegamos a propriedade fica logo ali na frente, acho melhor a gente ir caminhando.");
 		System.out.println("Ethan: Tem certeza que essa propriedade pertencia a organização, ela parece abandonada.");
-		System.out.println(
-				"Magnus Montgomery: Ela pode aparentar abandonada por fora, mas ainda pode ter alguma coisa nela que nos ajude a descobrir algo sobre a oorganização");
-		System.out.println(
-				"Ethan: Esse portão parece enferrujado, parece não ter nenhum tipo de alarme ou cadeado no portão,vou tentar abrir o portão");
-		System.out.println("Magnus Montgomery: Tome cuidado Ethan pode ser uma armadilha!!");
+		System.out.println("Magnus Montgomery: Ela pode aparentar abandonada por fora, mas ainda pode ter alguma coisa nela que nos ajude a descobrir algo sobre a oorganização.");
+		System.out.println("Ethan: Esse portão parece enferrujado, parece não ter nenhum tipo de alarme ou cadeado no portão,vou tentar abrir o portão.");
+		System.out.println("Magnus Montgomery: Tome cuidado Ethan pode ser uma armadilha!!\n");
 
 		int verificar;
-		String resposta;
+        String resposta;
 
-		do {
-			System.out.println("1 - Abrir o portão e entrar na propriedade abandonada\n");
-			System.out.println("2 - Verificar se possui alguma armadilha.");
+        do {
+            System.out.println("1 - Abrir o portão e entrar na propriedade abandonada\n");
+            System.out.println("2 - Verificar se possui alguma armadilha.");
 
-			verificar = input.nextInt();
-			input.nextLine();
+            while (!input.hasNextInt()) {
+                System.out.println("Por favor, insira um número válido:");
+                input.next(); 
+            }
+            verificar = input.nextInt();
+            input.nextLine(); 
 
-			if (verificar == 1) {
-				System.out.println(
-						"Parece que não tem nenhum tipo de armadilha, acho que ela está realmente abandonada.");
-				System.out.println();
-			} else if (verificar == 2) {
-				System.out.println("Ethan: Acho melhor a gente verificar se não possui algum tipo de armadilha.");
-				System.out
-						.println("Magnus Montgomery: Vou dar uma olhada nos fundos da casa e você olha em volta dela.");
-				System.out.println("Ethan: Tudo bem, a gente se encontra aqui de novo quando acabarmos de verificar.");
-				System.out.println("Você caminha em volta da propriedade abandonada mas não encontra nada.");
-				System.out.println("Então você resolve voltar até a entrada da casa e aguardar.");
-				System.out.println(
-						"Magnus Montgomery: Ethan, verifiquei nos fundos e não encontrei nada. Você encontrou alguma coisa?");
+            if (verificar == 1) {
+                System.out.println("Parece que não tem nenhum tipo de armadilha, acho que ela está realmente abandonada.");
+                System.out.println();
+            } else if (verificar == 2) {
+                System.out.println("Ethan: Acho melhor a gente verificar se não possui algum tipo de armadilha.");
+                System.out.println("Magnus Montgomery: Vou dar uma olhada nos fundos da casa e você olha em volta dela.");
+                System.out.println("Ethan: Tudo bem, a gente se encontra aqui de novo quando acabarmos de verificar.");
+                System.out.println("Você caminha em volta da propriedade abandonada mas não encontra nada.");
+                System.out.println("Então você resolve voltar até a entrada da casa e aguardar.");
+                System.out.println("Magnus Montgomery: Ethan, verifiquei nos fundos e não encontrei nada. Você encontrou alguma coisa?");
 
-				do {
-					System.out.println("Responda 'Não':");
-					resposta = input.nextLine().trim().toLowerCase();
+                do {
+                    System.out.println("Responda 'Não':");
+                    resposta = input.nextLine().trim().toLowerCase();
 
-					if (resposta.equals("Não")) {
-						System.out.println("Ethan: Não, não encontrei nada.");
-					} else {
-						System.out.println(
-								"Resposta inválida. Por favor, responda apenas 'não' para responder a pergunta.");
-					}
-				} while (!resposta.equals("Não"));
+                    if (resposta.equals("não")) {
+                        System.out.println("Ethan: Não, não encontrei nada.");
+                    } else {
+                        System.out.println("Resposta inválida. Por favor, responda apenas 'não' para responder a pergunta.");
+                    }
+                } while (!resposta.equals("não"));
 
-			} else {
-				System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2]:");
-			}
+            } else {
+                System.out.println("Opção inválida. Por favor, escolha entre a opção [1] ou [2]:");
+            }
 
-		} while (verificar != 1 && verificar != 2);
+        } while (verificar != 1 && verificar != 2);
 
-		System.out.println(
-				"Magnus Montgomery: Vamos entrar, mas fique atento mesmo assim, não sabemos o que podemos encontrar");
+		System.out.println("Magnus Montgomery: Vamos entrar, mas fique atento mesmo assim, não sabemos o que podemos encontrar.");
 		System.out.println("Ethan: Parece que a porta está aberta também, acho que não tem ninguém.");
-		System.out.println("Ethan: vamos ver se encontramos alguma pista.Talvez tenha algo que nos ajude");
+		System.out.println("Ethan: vamos ver se encontramos alguma pista.Talvez tenha algo que nos ajude.");
 		System.out.println("Magnus Montgomery: Por onde você gostaria de começar a procurar?\n");
 
 		int pista;
 
-		do {
-			System.out.println("1 - Verficar a sala.");
-			System.out.println("2 - Verficar os quartos.");
-			System.out.println("3 - Verficar a biblioteca.");
+        do {
+            System.out.println("1 - Verificar a sala.");
+            System.out.println("2 - Verificar os quartos.");
+            System.out.println("3 - Verificar a biblioteca.");
 
-			pista = input.nextInt();
-			input.nextLine();
+            // Verifica se a próxima entrada é um número inteiro
+            while (!input.hasNextInt()) {
+                System.out.println("Por favor, insira um número válido:");
+                input.next(); 
+            }
+            pista = input.nextInt();
+            input.nextLine(); 
 
-			if (pista == 1) {
-				System.out.println("Ethan: vamos verficar a sala.");
-				System.out.println(
-						"Magnus Montgomery: Boa ideia. A sala pode conter alguma pista sobre quem esteve aqui recentemente.");
-				System.out.println("Ethan: Vou checar perto da lareira, você pode dar uma olhada nos armários.  ");
-				System.out.println("Você procura perto da lareira mas não encontra nada!!");
-				System.out.println("Ethan: Você encontrou alguma coisa?");
-				System.out.println(
-						"Magnus Montgomery: Não econtrei nada também, o que você acha da gente verficar os outos comodos da casa?");
-				System.out.println();
-			} else if (pista == 2) {
-				System.out.println("vamos verficar os quartos");
-				System.out
-						.println("Magnus Montgomery: Boa escolha, os quartos podem ter itens pessoais ou documentos.");
-				System.out.println("Ethan: Eu vou começar pelo quarto principal, você pode ver o quarto de hóspedes.");
-				System.out.println(
-						"Magnus Montgomery: Combinado. Mantenha os olhos abertos para qualquer coisa fora do comum.");
-				System.out.println("Você verfica o quarto principal mas não encontra nada!!");
-				System.out.println("Magnus Montgomery: Parece que não tivemos sorte dessa vez, não encontramos nada");
-				System.out.println("Magnus Montgomery: O que você acha da gente ir verficar os outos comodos da casa?");
-				System.out.println();
-			} else if (pista == 3) {
-				System.out.println("vamos verficar a biblioteca");
-				System.out.println("Magnus Montgomery: A biblioteca pode ter registros importantes ou diários");
-				System.out.println("Ethan: Vou olhar nas prateleiras do fundo, você pode ver a mesa de leitura.");
-				System.out.println("Magnus Montgomery: Sim, vou ver se encontro algum livro ou documento relevante.");
-				System.out.println("Ethan: Estranho esse livro parece ser diferente dos outros, vou dar uma olhada");
-				System.out.println("Ethan: maguns vem ver isso acho que encontrei algo");
-				System.out.println(
-						"Magnus Montgomery: parece ser algum tipo de trava com uma senha, você acha que consegue destravar descobrindo a senha?");
-				System.out.println();
-			} else {
-				System.out.println("Opção inválida. Por favor, escolha entre a opção [1], [2] ou [3]:");
-			}
+            if (pista == 1) {
+                System.out.println("Ethan: Vamos verificar a sala.");
+                System.out.println("Magnus Montgomery: Boa ideia. A sala pode conter alguma pista sobre quem esteve aqui recentemente.");
+                System.out.println("Ethan: Vou checar perto da lareira, você pode dar uma olhada nos armários.  ");
+                System.out.println("Você procura perto da lareira mas não encontra nada!!");
+                System.out.println("Ethan: Você encontrou alguma coisa?");
+                System.out.println("Magnus Montgomery: Não encontrei nada também, o que você acha da gente verificar os outros cômodos da casa?");
+                System.out.println();
+            } else if (pista == 2) {
+                System.out.println("Ethan: vamos verificar os quartos.");
+                System.out.println("Magnus Montgomery: Boa escolha, os quartos podem ter itens pessoais ou documentos.");
+                System.out.println("Ethan: Eu vou começar pelo quarto principal, você pode ver o quarto de hóspedes.");
+                System.out.println("Magnus Montgomery: Combinado. Mantenha os olhos abertos para qualquer coisa fora do comum.");
+                System.out.println("Você verifica o quarto principal mas não encontra nada!!");
+                System.out.println("Magnus Montgomery: Parece que não tivemos sorte dessa vez, não encontramos nad.a");
+                System.out.println("Magnus Montgomery: O que você acha da gente ir verificar os outros cômodos da casa?.");
+                System.out.println();
+            } else if (pista == 3) {
+                System.out.println("Ethan: vamos verificar a biblioteca.");
+                System.out.println("Magnus Montgomery: A biblioteca pode ter registros importantes ou diários.");
+                System.out.println("Ethan: Vou olhar nas prateleiras do fundo, você pode ver a mesa de leitura.");
+                System.out.println("Magnus Montgomery: Sim, vou ver se encontro algum livro ou documento relevante.");
+                System.out.println("Ethan: Estranho esse livro parece ser diferente dos outros, vou dar uma olhada.");
+                System.out.println("Ethan: Magnus, vem ver isso acho que encontrei algo.");
+                System.out.println("Magnus Montgomery: parece ser algum tipo de trava com uma senha, você acha que consegue destravar descobrindo a senha?.");
+                System.out.println();
+            } else {
+                System.out.println("Opção inválida. Por favor, escolha entre a opção [1], [2] ou [3]:");
+            }
 
-		} while (pista != 3);
+        } while (pista != 3);
 
-//	        Enigma 4: A Prova Final	        
 
-		String[] opcoes = { "A: x = -1 ou x = -3", "B: x = 1 ou x = 3", // resposta correta letra B
-				"C: x = 2 ou x = -3", "D: x = -2 ou x = 3" };
+//        Enigma 4: A Prova Final	
+        
+//        Resposta correta Letra C
+
+		String[] opcoes = { "A: x = -3 e x = -2", "B: x = 1 e x = 3","C: x = -2 e x = 1", "D: x = 2 e x = -1." }; 
 		int vidas = 3;
 		boolean tentativas = true;
 		Random embaralhar = new Random();
 
 		while (tentativas && vidas > 0) {
-			System.out.println("Resolva a equação do segundo grau 2x^2 - 8x + 6 = 0. Qual é o valor de x?");
+			System.out.println("Resolva a equação do segundo grau x^2 - 3x + 2 = 0. Qual é o valor de x?");
 
 			// Embaralhar as opções
 			for (int i = opcoes.length - 1; i > 0; i--) {
@@ -608,18 +614,16 @@ public class OperacaoAurora {
 		System.out.println("Pratileira: CRRRRREEEEAAAKKKK... THUD!");
 		System.out.println("Magnus Montgomery: Parece que encontramos uma passagem secreta.");
 		System.out.println("Magnus Montgomery: Devemos descer e ver onde leva?");
-		System.out.println("Ethan: Com certeza. Vamos descobrir o que estão escondendo aqui.");
+		System.out.println("Ethan: Com certeza.Vamos descobrir o que estão escondendo aqui.");
 		System.out.println("Magnus Montgomery: Fique atento. Não sabemos o que podemos encontrar lá embaixo.");
-		System.out.println("Magnus Montgomery: Esse lugar parece realmente abandonado, parece que chegamos");
+		System.out.println("Magnus Montgomery: Esse lugar parece realmente abandonado, parece que chegamos.");
 		System.out.println("Ethan: Olha para esse lugar parece que realmente eles estiveram por aqui.");
 		System.out.println("Magnus Montgomery: Ethan!!, venha ver isso aqui.");
 		System.out.println("Ethan: Não consigo acreditar no que estou vendo, precisamos dar um jeito de impedir isso");
 		System.out.println("Magnus Montgomery: Realmente, precisamos dar um jeito de impedir esse plano deles");
-		System.out.println(
-				"Magnus Montgomery: Não consigo acreditar que eles estavam planejando fazer algo desse tamanho, isso pode afetar a segurança de todos globalmente");
+		System.out.println("Magnus Montgomery: Não consigo acreditar que eles estavam planejando fazer algo desse tamanho, isso pode afetar a segurança de todos globalmente");
 		System.out.println("Ethan: Espere!!,Acho que algo em baixo desses papeis, parece ser uma foto de uma mulher");
-		System.out.println(
-				"Ethan: Atrás da foto está escrito algo parece ser um endereço e um nome, mas não consigo reconhecer nada do que está escrito parece estar escrito em outro idioma");
+		System.out.println("Ethan: Atrás da foto está escrito algo parece ser um endereço e um nome, mas não consigo reconhecer nada do que está escrito parece estar escrito em outro idioma");
 		System.out.println("Magnus Montgomery: Posso dar uma olhada nessa foto?");
 
 		String foto;
@@ -635,12 +639,9 @@ public class OperacaoAurora {
 			}
 		} while (!foto.equalsIgnoreCase("Sim"));
 
-		System.out.println(
-				"Magnus Montgomery: O nome que está escrito parece se chamar \"Aurora Sinclar\" e esse endereço parece ser de um templo budista no Himalaia.");
-		System.out.println(
-				"Magnus Montgomery: Será que essa mulher é a tal Aurora? Para ter certeza precisamos ir verificar o mais rapido possivel se realmente é ela.");
-		System.out.println(
-				"Magnus Montgomery: Esse templo fica longe de Sin City, mas o que você acha da gente ir agora checar?");
+		System.out.println("Magnus Montgomery: O nome que está escrito parece se chamar \"Aurora Sinclar\" e esse endereço parece ser de um templo budista no Himalaia.");
+		System.out.println("Magnus Montgomery: Será que essa mulher é a tal Aurora? Para ter certeza precisamos ir verificar o mais rapido possivel se realmente é ela.");
+		System.out.println("Magnus Montgomery: Esse templo fica longe de Sin City, mas o que você acha da gente ir agora checar?");
 		System.out.println("Ethan: Acho uma boa ideia, vamos sim!");
 
 	}
@@ -683,7 +684,7 @@ public class OperacaoAurora {
 		System.out.println("Monge: Mas qual o seu nome Jovem?");
 		System.out.println("Ethan: Meu nome é Ethan e o dele é Magnus Montgomery");
 
-		System.out.println("Mal eles sabiam que Aurora estava o tempo todo escutando a conversa, mas ja estava planejavam sairn quando escuto o nome de Ethan. Na mesma hora ela o reconheceu.");
+		System.out.println("Mal eles sabiam que Aurora estava o tempo todo escutando a conversa, mas ja estava planejando sair quando escuto o nome de Ethan. Na mesma hora ela o reconheceu.");
 		System.out.println("Ficou na dúvida se parava de escutar a conversa e iria se revelar para Ethan ou se deixava tudo como estava. Depois de tanta agonia, ela resolveu ir falar com ele:\n");
 
 		System.out.println("Aurora Sinclair: Sim Ethan estou aqui!");
@@ -835,12 +836,12 @@ public class OperacaoAurora {
 	public static void main(String[] args) throws Exception {
 		// Iniciando o jogo com o menu
 
-//		Menu();
+		Menu();
 //
 //		// Ao final de tudo o scanner é encerrado.
 //		input.close();
 
-		EncontrarAurora();
+//		EncontrarAurora();
 
 	}
 }
