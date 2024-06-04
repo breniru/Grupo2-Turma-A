@@ -783,6 +783,47 @@ public class OperacaoAurora {
 	}
 
 	public static void fina2BuscarVinganca() {
+		
+		System.out.println("Aurora encara Ethan com uma expressão de desafio, seus olhos não revelando nenhum sinal de remorso, apenas uma determinação fria e diz: \n");
+		
+		System.out.println("Aurora Sinclair: Sim, foi minha mão que os silenciou. Eles eram uma ameaça, um obstáculo no caminho para o poder que eu almejava.");
+		System.out.println("Aurora Sinclair: Não houve hesitação quando os matei. Foi um passo necessário para garantir meu domínio sobre \"O Olho Secreto\".\n");
+		
+		System.out.println("Sua confissão atinge Ethan como um soco no estômago, deixando-o atordoado pela crueldade de suas palavras. A verdade nua\n"
+		+"e crua diante dele, sem remorso, sem piedade. Ele luta para aceitar a realidade chocante diante dele, sua mente rejeitando\n"
+		+ "a ideia de que alguém pudesse ser tão impiedoso.\n");
+		
+		System.out.println("Com um olhar feroz e determinado, Ethan avança em direção a Aurora, cujos olhos gelados encaram-no com uma serenidade perturbadora.  \n"
+				+ "Na palma de sua mão, ele segura uma lâmina afiada como a própria raiva que consome seu coração, reluzindo sinistramente à luz do luar.\n"
+				+ "Cada passo de Ethan ressoa no silêncio sufocante do templo, carregado de uma energia sombria e implacável. \n");
+		
+		System.out.println("Aurora dá um passo para trás, sua expressão impassível, mas um brilho fugaz de temor atravessa seus olhos, reconhecendo \n"
+				+ "a intenção mortal de Ethan. Ela tenta escapar, mas encontra-se encurralada contra a parede fria do templo, sem escapatória \n"
+				+ "diante das sombras que se aproximam. \n");
+		
+		System.out.println("Sem proferir uma palavra, sem hesitação, Ethan ergue a lâmina e avança, seu rosto contorcido pela dor e pela sede de \n"
+				+ "vingança. O metal cortante perfura o ar com um sibilo sinistro antes de encontrar seu alvo com uma precisão assustadora. \n");
+		
+		System.out.println("Um grito rasgado irrompe pelo templo quando a lâmina penetra fundo no peito de Aurora, arrancando-lhe um gemido\n"
+				+ "angustiante. Ela cai de joelhos, os olhos ainda cravados nos de Ethan, agora obscurecidos pelo choque e pela dor.\n");
+		
+		System.out.println("Ethan observa em silêncio enquanto Aurora luta nos últimos momentos de sua vida, cada respiração tornando-se\n"
+				+ "mais difícil, cada batida do coração mais fraca. O som do vento sussurrando pelas folhas do templo testemunhao desfecho sombrio do confronto.\n");
+		
+		System.out.println("Com um suspiro final, Aurora desaba no chão, seus olhos perdendo o brilho da vida enquanto a escuridão a consome. Ethan permanece\n"
+				+ "de pé, seu peito pesado com a tormenta de emoções, mas uma sensação de alívio sombrio o envolve e em seguida diz:\n");
+		
+		System.out.println("Ethan: Isso foi pelos meus pais, a vida deles não foram em vão, eu os vinguei!!!!\n");
+		
+		System.out.println("Após assistir a vida de Aurora saindo lentamente de seu corpo, Ethan foge sem deixar rastros.\n");
+		
+		System.out.println(
+				   "\u001B[33m███████╗██╗███╗   ███╗\n"
+							+"██╔════╝██║████╗ ████║\n"
+							+"█████╗  ██║██╔████╔██║\n"
+							+"██╔══╝  ██║██║╚██╔╝██║\n"
+							+"██║     ██║██║ ╚═╝ ██║\n"
+							+"╚═╝     ╚═╝╚═╝     ╚═╝\u001B[0m");
 
 	}
 
@@ -886,7 +927,7 @@ public class OperacaoAurora {
 	public static void main(String[] args) throws Exception {
 		// Iniciando o jogo com o menu
 
-		Menu();
+		fina2BuscarVinganca();
 //
 //		// Ao final de tudo o scanner é encerrado.
 //		input.close();
