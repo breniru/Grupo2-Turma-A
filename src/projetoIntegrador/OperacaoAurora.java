@@ -59,7 +59,16 @@ public class OperacaoAurora {
 //	  Função responsável por iniciar o PRIMEIRO capitúlo.
 
 	static void SombrasGrandeMaca() {
-		System.out.println("\nSOMBRAS DA GRANDE MAÇA: ");
+		System.out.println("Capitulo 1: \n");
+		
+		System.out.println(
+	   "\u001B[33m███████╗ ██████╗ ███╗   ███╗██████╗ ██████╗  █████╗ ███████╗    ██████╗  █████╗      ██████╗ ██████╗  █████╗ ███╗   ██╗██████╗ ███████╗    ███╗   ███╗ █████╗  ██████╗ █████╗ \n"
+				+"██╔════╝██╔═══██╗████╗ ████║██╔══██╗██╔══██╗██╔══██╗██╔════╝    ██╔══██╗██╔══██╗    ██╔════╝ ██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔════╝    ████╗ ████║██╔══██╗██╔════╝██╔══██╗\n"
+				+"███████╗██║   ██║██╔████╔██║██████╔╝██████╔╝███████║███████╗    ██║  ██║███████║    ██║  ███╗██████╔╝███████║██╔██╗ ██║██║  ██║█████╗      ██╔████╔██║███████║██║     ███████║\n"
+				+"╚════██║██║   ██║██║╚██╔╝██║██╔══██╗██╔══██╗██╔══██║╚════██║    ██║  ██║██╔══██║    ██║   ██║██╔══██╗██╔══██║██║╚██╗██║██║  ██║██╔══╝      ██║╚██╔╝██║██╔══██║██║     ██╔══██║\n"
+				+"███████║╚██████╔╝██║ ╚═╝ ██║██████╔╝██║  ██║██║  ██║███████║    ██████╔╝██║  ██║    ╚██████╔╝██║  ██║██║  ██║██║ ╚████║██████╔╝███████╗    ██║ ╚═╝ ██║██║  ██║╚██████╗██║  ██║\n"
+				+"╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝    ╚═════╝ ╚═╝  ╚═╝     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝\u001B[0m");
+		
 	}
 
 //	 Função responsável por iniciar o SEGUNDO capitúlo.
@@ -68,7 +77,7 @@ public class OperacaoAurora {
 
 		System.out.println("Capitulo 2:\n");
 		System.out.println(
-				          "██████╗ ███████╗███████╗██╗   ██╗███████╗███╗   ██╗██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ \n"
+				"\u001B[33m██████╗ ███████╗███████╗██╗   ██╗███████╗███╗   ██╗██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ \n"
 						+ "██╔══██╗██╔════╝██╔════╝██║   ██║██╔════╝████╗  ██║██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔═══██╗\n"
 						+ "██║  ██║█████╗  ███████╗██║   ██║█████╗  ██╔██╗ ██║██║  ██║███████║██╔██╗ ██║██║  ██║██║   ██║\n"
 						+ "██║  ██║██╔══╝  ╚════██║╚██╗ ██╔╝██╔══╝  ██║╚██╗██║██║  ██║██╔══██║██║╚██╗██║██║  ██║██║   ██║\n"
@@ -79,7 +88,7 @@ public class OperacaoAurora {
 						+ "██║   ██║    ██║   ██║██║     ███████║██║   ██║    ███████╗█████╗  ██║     ██████╔╝█████╗     ██║   ██║   ██║ \n"
 						+ "██║   ██║    ██║   ██║██║     ██╔══██║██║   ██║    ╚════██║██╔══╝  ██║     ██╔══██╗██╔══╝     ██║   ██║   ██║ \n"
 						+ "╚██████╔╝    ╚██████╔╝███████╗██║  ██║╚██████╔╝    ███████║███████╗╚██████╗██║  ██║███████╗   ██║   ╚██████╔╝ \n"
-						+ " ╚═════╝      ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝     ╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝   ╚═╝    ╚═════╝    ");
+						+ " ╚═════╝      ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝     ╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝   ╚═╝    ╚═════╝\u001B[0m");
 
 		System.out.println();
 		System.out.println("Já verifiquei quase todos os documento parece que não tem nada nesse lugar. Esse parece ser o ultimo documento, parece ter algo escrito nele.\n");
@@ -224,12 +233,12 @@ public class OperacaoAurora {
 		System.out.println("Capitulo 3:\n");
 		System.out.println();
 		System.out.println(
-				          "███████╗███╗   ███╗    ██████╗ ██╗   ██╗███████╗ ██████╗ █████╗     ██████╗  █████╗     ██╗   ██╗███████╗██████╗ ██████╗  █████╗ ██████╗ ███████╗\n"
+			    "\u001B[33m███████╗███╗   ███╗    ██████╗ ██╗   ██╗███████╗ ██████╗ █████╗     ██████╗  █████╗     ██╗   ██╗███████╗██████╗ ██████╗  █████╗ ██████╗ ███████╗\n"
 						+ "██╔════╝████╗ ████║    ██╔══██╗██║   ██║██╔════╝██╔════╝██╔══██╗    ██╔══██╗██╔══██╗    ██║   ██║██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝\n"
 						+ "█████╗  ██╔████╔██║    ██████╔╝██║   ██║███████╗██║     ███████║    ██║  ██║███████║    ██║   ██║█████╗  ██████╔╝██║  ██║███████║██║  ██║█████╗  \n"
 						+ "██╔══╝  ██║╚██╔╝██║    ██╔══██╗██║   ██║╚════██║██║     ██╔══██║    ██║  ██║██╔══██║    ╚██╗ ██╔╝██╔══╝  ██╔══██╗██║  ██║██╔══██║██║  ██║██╔══╝  \n"
 						+ "███████╗██║ ╚═╝ ██║    ██████╔╝╚██████╔╝███████║╚██████╗██║  ██║    ██████╔╝██║  ██║     ╚████╔╝ ███████╗██║  ██║██████╔╝██║  ██║██████╔╝███████╗\n"
-						+ "╚══════╝╚═╝     ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝ ╚═════╝╚═╝  ╚═╝    ╚═════╝ ╚═╝  ╚═╝      ╚═══╝  ╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝\n");
+						+ "╚══════╝╚═╝     ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝ ╚═════╝╚═╝  ╚═╝    ╚═════╝ ╚═╝  ╚═╝      ╚═══╝  ╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝\u001B[0m\n");
 
 		System.out.println();
 		System.out.println("Através de sua inteligência e perspicácia, você consegue se infiltra dentro do Olho Secreto.\n");
@@ -458,12 +467,12 @@ public class OperacaoAurora {
 
 		System.out.println("Capitulo 4:\n");
 		System.out.println(
-				          "██╗   ██╗███╗   ███╗     █████╗ ██╗     ██╗ █████╗ ██████╗  ██████╗     ██╗███╗   ██╗███████╗███████╗██████╗ ███████╗██████╗  █████╗ ██████╗  ██████╗ \n"
+			    "\u001B[33m██╗   ██╗███╗   ███╗     █████╗ ██╗     ██╗ █████╗ ██████╗  ██████╗     ██╗███╗   ██╗███████╗███████╗██████╗ ███████╗██████╗  █████╗ ██████╗  ██████╗ \n"
 						+ "██║   ██║████╗ ████║    ██╔══██╗██║     ██║██╔══██╗██╔══██╗██╔═══██╗    ██║████╗  ██║██╔════╝██╔════╝██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗\n"
 						+ "██║   ██║██╔████╔██║    ███████║██║     ██║███████║██║  ██║██║   ██║    ██║██╔██╗ ██║█████╗  ███████╗██████╔╝█████╗  ██████╔╝███████║██║  ██║██║   ██║\n"
 						+ "██║   ██║██║╚██╔╝██║    ██╔══██║██║     ██║██╔══██║██║  ██║██║   ██║    ██║██║╚██╗██║██╔══╝  ╚════██║██╔═══╝ ██╔══╝  ██╔══██╗██╔══██║██║  ██║██║   ██║\n"
 						+ "╚██████╔╝██║ ╚═╝ ██║    ██║  ██║███████╗██║██║  ██║██████╔╝╚██████╔╝    ██║██║ ╚████║███████╗███████║██║     ███████╗██║  ██║██║  ██║██████╔╝╚██████╔╝\n"
-						+ " ╚═════╝ ╚═╝     ╚═╝    ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝     ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ \n");
+						+ " ╚═════╝ ╚═╝     ╚═╝    ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝     ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝\u001B[0m \n");
 
 		System.out.println("Algumas horas depois....\n");
 		System.out.println("Magnus Montgomery: Chegamos a propriedade fica logo ali na frente, acho melhor a gente ir caminhando.");
@@ -650,13 +659,20 @@ public class OperacaoAurora {
 
 	static void EncontrarAurora() {
 		System.out.println("Capitulo 5: \n");
-		System.out.println(
-				          "█████╗           ██╗ ██████╗ ██████╗ ███╗   ██╗ █████╗ ██████╗  █████╗     ██████╗  █████╗ ██████╗  █████╗     ███████╗███╗   ██╗ ██████╗ ██████╗ ███╗   ██╗████████╗██████╗  █████╗ ██████╗      █████╗ ██╗   ██╗██████╗  ██████╗ ██████╗  █████╗     ███████╗██╗███╗   ██╗ ██████╗██╗      █████╗ ██╗██████╗ \n"
-						+ "██╔══██╗         ██║██╔═══██╗██╔══██╗████╗  ██║██╔══██╗██╔══██╗██╔══██╗    ██╔══██╗██╔══██╗██╔══██╗██╔══██╗    ██╔════╝████╗  ██║██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗    ██╔══██╗██║   ██║██╔══██╗██╔═══██╗██╔══██╗██╔══██╗    ██╔════╝██║████╗  ██║██╔════╝██║     ██╔══██╗██║██╔══██╗\n"
-						+ "███████║         ██║██║   ██║██████╔╝██╔██╗ ██║███████║██║  ██║███████║    ██████╔╝███████║██████╔╝███████║    █████╗  ██╔██╗ ██║██║     ██║   ██║██╔██╗ ██║   ██║   ██████╔╝███████║██████╔╝    ███████║██║   ██║██████╔╝██║   ██║██████╔╝███████║    ███████╗██║██╔██╗ ██║██║     ██║     ███████║██║██████╔╝\n"
-						+ "██╔══██║    ██   ██║██║   ██║██╔══██╗██║╚██╗██║██╔══██║██║  ██║██╔══██║    ██╔═══╝ ██╔══██║██╔══██╗██╔══██║    ██╔══╝  ██║╚██╗██║██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██╗██╔══██║██╔══██╗    ██╔══██║██║   ██║██╔══██╗██║   ██║██╔══██╗██╔══██║    ╚════██║██║██║╚██╗██║██║     ██║     ██╔══██║██║██╔══██╗\n"
-						+ "██║  ██║    ╚█████╔╝╚██████╔╝██║  ██║██║ ╚████║██║  ██║██████╔╝██║  ██║    ██║     ██║  ██║██║  ██║██║  ██║    ███████╗██║ ╚████║╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║██║  ██║██║  ██║    ██║  ██║╚██████╔╝██║  ██║╚██████╔╝██║  ██║██║  ██║    ███████║██║██║ ╚████║╚██████╗███████╗██║  ██║██║██║  ██║\n"
-						+ "╚═╝  ╚═╝     ╚════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝    ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝    ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝\n");
+				System.out.println( 
+						  " \u001B[33m█████╗          ██╗ ██████╗ ██████╗ ███╗   ██╗ █████╗ ██████╗  █████╗     ██████╗  █████╗ ██████╗  █████╗     ███████╗███╗   ██╗ ██████╗ ██████╗ ███╗   ██╗████████╗██████╗  █████╗ ██████╗ \n"
+							       +"██╔══██╗         ██║██╔═══██╗██╔══██╗████╗  ██║██╔══██╗██╔══██╗██╔══██╗    ██╔══██╗██╔══██╗██╔══██╗██╔══██╗    ██╔════╝████╗  ██║██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗\n"
+							       +"███████║         ██║██║   ██║██████╔╝██╔██╗ ██║███████║██║  ██║███████║    ██████╔╝███████║██████╔╝███████║    █████╗  ██╔██╗ ██║██║     ██║   ██║██╔██╗ ██║   ██║   ██████╔╝███████║██████╔╝\n"
+							       +"██╔══██║    ██   ██║██║   ██║██╔══██╗██║╚██╗██║██╔══██║██║  ██║██╔══██║    ██╔═══╝ ██╔══██║██╔══██╗██╔══██║    ██╔══╝  ██║╚██╗██║██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██╗██╔══██║██╔══██╗\n"
+							       +"██║  ██║    ╚█████╔╝╚██████╔╝██║  ██║██║ ╚████║██║  ██║██████╔╝██║  ██║    ██║     ██║  ██║██║  ██║██║  ██║    ███████╗██║ ╚████║╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║██║  ██║██║  ██║\n"
+							       +"╚═╝  ╚═╝     ╚════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝    ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝\n"
+
+						 		   +" █████╗ ██╗   ██╗██████╗  ██████╗ ██████╗  █████╗     ███████╗██╗███╗   ██╗ ██████╗██╗      █████╗ ██╗██████╗ \n"
+							       +"██╔══██╗██║   ██║██╔══██╗██╔═══██╗██╔══██╗██╔══██╗    ██╔════╝██║████╗  ██║██╔════╝██║     ██╔══██╗██║██╔══██╗\n"
+							       +"███████║██║   ██║██████╔╝██║   ██║██████╔╝███████║    ███████╗██║██╔██╗ ██║██║     ██║     ███████║██║██████╔╝\n"
+							       +"██╔══██║██║   ██║██╔══██╗██║   ██║██╔══██╗██╔══██║    ╚════██║██║██║╚██╗██║██║     ██║     ██╔══██║██║██╔══██╗\n"
+							       +"██║  ██║╚██████╔╝██║  ██║╚██████╔╝██║  ██║██║  ██║    ███████║██║██║ ╚████║╚██████╗███████╗██║  ██║██║██║  ██║\n"
+							       +"╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝    ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝\u001B[0m\n");
 
 		System.out.println(
 				"A jornada ao Himalaia é árdua e repleta de perigos. Eles enfrentam tempestades de neve, avalanches e animais selvagens, por todo o caminho.\n");
@@ -691,12 +707,9 @@ public class OperacaoAurora {
 		System.out.println("Ethan: Quem é você? Não me diga que é Aurora.");
 		System.out.println("Aurora Sinclair: Sim, sou eu mesma e já até sei o motivo de você estar aqui.\n");
 
-		System.out.println(
-				"Aurora revela sua história. Ela confirma que foi traída por um membro de alto escalão de \"O Olho Secreto\" e coagida a ");
-		System.out.println(
-				"participar da morte dos pais de [NOME DO JOGADOR]. No entanto, ela alega que não agiu por maldade, mas sob ameaça de morte dela ");
-		System.out.println(
-				"e de pessoas próximas. Consumida pelo remorso, fugiu da organização e buscou refúgio no templo, buscando redenção por seus atos.");
+		System.out.println("Aurora revela sua história. Ela confirma que foi traída por um membro chamado Viktor Delacroix de alto escalão de \"O Olho Secreto\" e coagida a ");
+		System.out.println("participar da morte dos pais de [NOME DO JOGADOR]. No entanto, ela alega que não agiu por maldade, mas sob ameaça de morte dela ");
+		System.out.println("e de pessoas próximas. Consumida pelo remorso, fugiu da organização e buscou refúgio no templo, buscando redenção por seus atos.");
 
 		System.out.println("Diante da confissão de Aurora, Ethan se vê diante de uma escolha crucial:");
 
@@ -729,7 +742,44 @@ public class OperacaoAurora {
 	}
 
 	public static void final1PerdoarAurora() {
-
+		System.out.println("Com os primeiros raios de sol iluminando o jardim zen do templo budista, [NOME DO JOGADOR] olha profundamente nos olhos de Aurora.\n"
+				+ "A tensão é palpável, mas há algo mais – um entendimento silencioso. Ele respira fundo, sentindo o peso da decisão iminente. Após um momento \nque parece eterno, ele finalmente fala:\n");
+		
+		System.out.println("Ethan: Eu te perdoo, Aurora.\n");
+		
+		System.out.println("Essas palavras, simples mas poderosas, ecoam pelo jardim. Aurora, com lágrimas nos olhos, ajoelha-sediante de [NOME DO JOGADOR],a gratidão \n"
+				+ "e o alívio transbordando de sua expressão. O monge ancião, observando de perto, sorri serenamente, como se já soubesse que essa seria a escolha.\n");
+		
+		System.out.println("Aurora Sinclair: Obrigado. Prometo que dedicarei minha vida a corrigir meus erros e ajudar a desmantelar \"O Olho Secreto\". \n");
+		
+		System.out.println("De volta a Sin City, [NOME DO JOGADOR], Aurora e [NOME DO PERSONAGEM] começam a reunir evidências contra o traidor, Viktor Delacroix. Aurora,\n"
+				+ "com seu conhecimento interno, ajuda a identificar os principais apoiadores de Delacroix e os pontos fracos da organização. Eles criam uma \n"
+				+ "rede de aliados confiáveis, incluindo antigos membros desiludidos de 'O Olho Secreto' e agentes de segurança locais, determinados a acabar com a corrupção.\n");
+		
+		System.out.println("A operação é tensa, mas a confiança mútua e o apoio de Aurora são cruciais. Eles enfrentam agentes leais ao traidor e superam diversas armadilhas \n"
+				+ "mortais. Finalmente, chegam ao coração da base, onde Delacroix está prestes a executar um plano que poderia causar caos mundial. \n");
+		
+		System.out.println("O confronto final é intenso, mas Delacroix é derrotado graças à combinação das habilidades de combate de [NOME DO JOGADOR], a astúcia de [NOME DO PERSONAGEM]\n"
+				+ "e o conhecimento interno de Aurora. Com Delacroix neutralizado e as provas em mãos, 'O Olho Secreto' começa a ruir por dentro.\n");
+		
+		System.out.println("Aurora cumpre sua promessa, expondo a organização ao mundo e garantindo que suas operações nunca mais sejam realizadas nas sombras. De volta a Sin City, [NOME DO JOGADOR]\n"
+				+ "visita o túmulo de seus pais, finalmente em paz. Aurora, fiel à sua palavra, abre um orfanato, oferecendo um lar seguro para crianças vulneráveis.\n");
+		
+		System.out.println("[NOME DO JOGADOR], Aurora e [NOME DO PERSONAGEM] continuam suas vidas, sabendo que a luta pela verdade e pela justiça nunca termina, mas agora com um propósito renovado.\n"
+				+ "O caminho do perdão trouxe não apenas justiça, mas também a chance de um novo começo, onde a escuridão do passado foi finalmente iluminada pela luz do perdão e da redenção.\n");
+		
+		
+		
+		System.out.println(
+			   "\u001B[33m███████╗██╗███╗   ███╗\n"
+						+"██╔════╝██║████╗ ████║\n"
+						+"█████╗  ██║██╔████╔██║\n"
+						+"██╔══╝  ██║██║╚██╔╝██║\n"
+						+"██║     ██║██║ ╚═╝ ██║\n"
+						+"╚═╝     ╚═╝╚═╝     ╚═╝\u001B[0m");
+		
+		
+		
 	}
 
 	public static void fina2BuscarVinganca() {
@@ -737,7 +787,7 @@ public class OperacaoAurora {
 	}
 
 	public static void fina3UmaNovaJornada() {
-
+		
 	}
 
 //	  Função responsável por iniciar o SEXTO capitúlo.
@@ -841,7 +891,7 @@ public class OperacaoAurora {
 //		// Ao final de tudo o scanner é encerrado.
 //		input.close();
 
-//		EncontrarAurora();
+		
 
 	}
 }
