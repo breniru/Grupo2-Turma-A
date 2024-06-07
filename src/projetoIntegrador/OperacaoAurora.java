@@ -158,6 +158,8 @@ public class OperacaoAurora {
 		
 		imprimir("Coordenadas: \n",TimeUnit.MILLISECONDS, tempo_dialogo);		
 		
+		Scanner scanner = new Scanner(System.in);
+		
         String[] respostas = {
             "2.2° e 3.5°",  // Resposta correta
             "1.5° e 3.6°",
@@ -189,7 +191,7 @@ public class OperacaoAurora {
             System.out.println();
             imprimir("Digite a letra da resposta correta: ",TimeUnit.MILLISECONDS, tempo_transicao);
             
-            String resposta = input.nextLine().toUpperCase();
+            String resposta = scanner.nextLine().toUpperCase();
 
             int indexResposta = -1;
             switch (resposta) {
