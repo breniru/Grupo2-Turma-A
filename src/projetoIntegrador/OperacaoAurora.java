@@ -51,7 +51,7 @@ public class OperacaoAurora {
 		imprimir(" *-* Explorar locais secretos, resolver enigmas e decifrar mensagens enigmáticas para avançar na investigação. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		imprimir(" *-* Irá encontrar aliados improváveis e enfrentar agentes perigosos em sua jornada pela verdade e justiça. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		imprimir(" *-* Tomar decisões não é uma tarefa fácil, não é mesmo? Por isso suas decisões serão cruciais, pois afetarão o desfecho da história e o destino do personagem principal. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
-		imprimir(" *-* O mais importate! Você testará suas habilidades matemáticas ao resolver enigmas e desafios que se apresentam ao longo da narrativa \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		imprimir(" *-* O mais importante! Você testará suas habilidades matemáticas ao resolver enigmas e desafios que se apresentam ao longo da narrativa \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		
 		imprimir("Para ficar preparado para essa imersão de enigmas matemáticos (polinômios, equações do segundo grau e propriedades da potenciação), aí estão algumas dicas que possam te ajudar: \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		
@@ -99,9 +99,11 @@ public class OperacaoAurora {
 		imprimir(" *-*  2. divisão de potências de mesma base; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		imprimir(" *-*  3. potência de potência; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		imprimir(" *-*  4. produto de potências com a mesma base; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
-		imprimir(" *-*  5. quociente de potências com a mesma base; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		imprimir(" *-*  5. coeficiente de potências com a mesma base; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		imprimir(" *-*  6. qualquer número elevado a zero é igual a 1; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
-		imprimir(" *-*  7. potência negativa é o inverso da potência positiva. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		imprimir(" *-*  7. potência negativa é o inverso da potência positiva. \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		
+		menu();
 	}
 
 	// #region Funçõs responsáveis pelo desenvolvimento dos capitúlos/jogo.
