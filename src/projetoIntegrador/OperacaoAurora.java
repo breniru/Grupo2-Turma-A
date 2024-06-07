@@ -44,15 +44,61 @@ public class OperacaoAurora {
 	 * Função responsável por dar ao jogador instruções sobre o jogo.
 	 */
 	static void Intrucoes() throws Exception {
-		Imprimir(
-				"Operação Aurora é uma experiência imersiva que combina elementos de narrativa e resolução de enigmas, proporcionando a você uma jornada emocionante e cheia de mistérios para desvendar!",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir("Operação Aurora é uma experiência imersiva que combina elementos de narrativa e resolução de enigmas, proporcionando a você uma jornada emocionante e cheia de mistérios para desvendar! \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir("Combinando narrativa envolvente com desafios matemáticos que testam as habilidades dos jogadores. \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		
+		Imprimir(" *-* Aqui você irá descobrir a história de Ethan Blackwood, um jovem em busca da verdade por trás da morte misteriosa de seus pais em Sin City, 1925.. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-* Explorar locais secretos, resolver enigmas e decifrar mensagens enigmáticas para avançar na investigação. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-* Irá encontrar aliados improváveis e enfrentar agentes perigosos em sua jornada pela verdade e justiça. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-* Tomar decisões não é uma tarefa fácil, não é mesmo? Por isso suas decisões serão cruciais, pois afetarão o desfecho da história e o destino do personagem principal. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-* O mais importate! Você testará suas habilidades matemáticas ao resolver enigmas e desafios que se apresentam ao longo da narrativa \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		
+		Imprimir("Para ficar preparado para essa imersão de enigmas matemáticos (polinômios, equações do segundo grau e propriedades da potenciação), aí estão algumas dicas que possam te ajudar: \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		
+		System.out.println("██████╗  ██████╗ ██╗     ██╗███╗   ██╗ ██████╗ ███╗   ███╗██╗ ██████╗ ███████╗");
+        System.out.println("██╔══██╗██╔═══██╗██║     ██║████╗  ██║██╔═══██╗████╗ ████║██║██╔═══██╗██╔════╝");
+        System.out.println("██████╔╝██║   ██║██║     ██║██╔██╗ ██║██║   ██║██╔████╔██║██║██║   ██║███████╗");
+        System.out.println("██╔═══╝ ██║   ██║██║     ██║██║╚██╗██║██║   ██║██║╚██╔╝██║██║██║   ██║╚════██║");
+        System.out.println("██║     ╚██████╔╝███████╗██║██║ ╚████║╚██████╔╝██║ ╚═╝ ██║██║╚██████╔╝███████║");
+        System.out.println("╚═╝      ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝ ╚═════╝ ╚══════╝ \n");
 
-		/*
-		 * DEFINIR ESSAS INTRUÇÕES - O QUE SERÁ POSTO? Ideias: - Colocar um pouco sobre
-		 * os capitulos - Explicar um pouco sobre os personagens - Falar sobre os
-		 * enigmas de forma breve
-		 */
+		Imprimir("Para apoio: Khan Academy - Polynomials e Brasil Escola - Polinômios \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		
+		Imprimir(" *-* Um polinômio é uma expressão algébrica que envolve variáveis elevadas a diferentes potências, multiplicadas por coeficientes e somadas ou subtraídas entre si. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-* Para realizar operações com polinômios, é fundamental entender como adicionar, subtrair, multiplicar e dividir polinômios. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-* É importante também saber identificar o grau de um polinômio, que é o maior expoente da variável presente no polinômio. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		
+		System.out.println("███████╗ ██████╗ ██╗   ██╗ █████╗  ██████╗ ██████╗ ███████╗███████╗    ██████╗      ██████╗ ██████╗  █████╗ ██╗   ██╗");
+        System.out.println("██╔════╝██╔═══██╗██║   ██║██╔══██╗██╔════╝██╔═══██╗██╔════╝██╔════╝    ╚════██╗    ██╔════╝ ██╔══██╗██╔══██╗██║   ██║");
+        System.out.println("█████╗  ██║   ██║██║   ██║███████║██║     ██║   ██║█████╗  ███████╗     █████╔╝    ██║  ███╗██████╔╝███████║██║   ██║");
+        System.out.println("██╔══╝  ██║▄▄ ██║██║   ██║██╔══██║██║     ██║   ██║██╔══╝  ╚════██║    ██╔═══╝     ██║   ██║██╔══██╗██╔══██║██║   ██║");
+        System.out.println("███████╗╚██████╔╝╚██████╔╝██║  ██║╚██████╗╚██████╔╝███████╗███████║    ███████╗    ╚██████╔╝██║  ██║██║  ██║╚██████╔╝");
+        System.out.println("╚══════╝ ╚══▀▀═╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚══════╝    ╚══════╝     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ \n");
 
+		Imprimir("Para apoio: Khan Academy - Quadratic Equations e Toda Matéria - Equações do 2º Grau \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		
+		Imprimir(" *-* Uma equação do segundo grau é uma equação onde a variável está elevada ao quadrado, com a forma geral: ax² + bx + c = 0 \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-* Para resolver uma equação do segundo grau, você pode usar a fórmula de Bhaskara \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-* É importante lembrar que uma equação do segundo grau pode ter duas raízes (quando o discriminante é maior que zero), uma raiz (quando o discriminante é igual a zero) ou nenhuma raiz real (quando o discriminante é menor que zero). \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+
+		System.out.println("██████╗  ██████╗ ████████╗███████╗███╗   ██╗ ██████╗██╗ █████╗  ██████╗ █████╗  ██████╗ ");
+        System.out.println("██╔══██╗██╔═══██╗╚══██╔══╝██╔════╝████╗  ██║██╔════╝██║██╔══██╗██╔════╝██╔══██╗██╔═══██╗");
+        System.out.println("██████╔╝██║   ██║   ██║   █████╗  ██╔██╗ ██║██║     ██║███████║██║     ███████║██║   ██║");
+        System.out.println("██╔═══╝ ██║   ██║   ██║   ██╔══╝  ██║╚██╗██║██║     ██║██╔══██║██║     ██╔══██║██║   ██║");
+        System.out.println("██║     ╚██████╔╝   ██║   ███████╗██║ ╚████║╚██████╗██║██║  ██║╚██████╗██║  ██║╚██████╔╝");
+        System.out.println("╚═╝      ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═══╝ ╚═════╝╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ \n");
+
+		Imprimir("Para apoio: Mundo Educação - Potenciação e Toda Matéria - Potenciação \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);	   	
+
+		Imprimir(" *-* A potenciação é uma operação matemática que consiste em multiplicar um número pela mesma quantidade de vezes indicada pelo expoente \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-* As propriedades da potenciação incluem: \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-*  1. produto de potências de mesma base; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-*  2. divisão de potências de mesma base; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-*  3. potência de potência; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-*  4. produto de potências com a mesma base; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-*  5. quociente de potências com a mesma base; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-*  6. qualquer número elevado a zero é igual a 1; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir(" *-*  7. potência negativa é o inverso da potência positiva. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 	}
 
 	// #region Funçõs responsáveis pelo desenvolvimento dos capitúlos/jogo.
@@ -1285,7 +1331,7 @@ public class OperacaoAurora {
 	 */
 	public static void main(String[] args) throws Exception {
 		// Iniciando o jogo com o menu
-		UmaNovaJornadaFinal();
+		Intrucoes();
 		
 		// Ao final de tudo o scanner é encerrado.
 		//input.close();
