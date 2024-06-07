@@ -1055,15 +1055,15 @@ public class OperacaoAurora {
 
 		case 1:
 			Imprimir("\nVocê escolheu Perdoar Aurora.\n\n",TimeUnit.MILLISECONDS, tempo_transicao);
-			FinalPerdoarAurora();
+			PerdoarAuroraFinal();
 			break;
 		case 2:
 			Imprimir("\nVocê escolheu Buscar Vingança.\n\n",TimeUnit.MILLISECONDS, tempo_transicao);
-			FinalBuscarVinganca();
+			BuscarVingancaFinal();
 			break;
 		case 3:
 			Imprimir("\nVocê escolheu Uma Nova Jornada.\n\n",TimeUnit.MILLISECONDS, tempo_transicao);
-			FinalUmaNovaJornada();
+			UmaNovaJornadaFinal();
 			break;
 		default:
 			Imprimir("\nOpção inválida. Tente novamente!\n\n",TimeUnit.MILLISECONDS, tempo_transicao);
@@ -1073,7 +1073,7 @@ public class OperacaoAurora {
 
 	}
 
-	public static void FinalPerdoarAurora() throws Exception {
+	public static void PerdoarAuroraFinal() throws Exception {
 		Imprimir("Com os primeiros raios de sol iluminando o jardim zen do templo budista, Ethan Blackwood olha profundamente nos olhos de Aurora.\n"//Ethan Blackwood
 				+ "A tensão é palpável, mas há algo mais – um entendimento silencioso. Ele respira fundo, sentindo o peso da decisão iminente. Após um momento \nque parece eterno, ele finalmente fala:\n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		
@@ -1114,7 +1114,7 @@ public class OperacaoAurora {
 		
 	}
 
-	public static void FinalBuscarVinganca() throws Exception {
+	public static void BuscarVingancaFinal() throws Exception {
 		
 		Imprimir("Aurora encara Ethan com uma expressão de desafio, seus olhos não revelando nenhum sinal de remorso, apenas uma determinação fria e diz: \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		
@@ -1150,24 +1150,52 @@ public class OperacaoAurora {
 		Imprimir("Após assistir a vida de Aurora saindo lentamente de seu corpo, Ethan foge sem deixar rastros.\n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		
 		System.out.println(
+			"\u001B[33m███████╗██╗███╗   ███╗\n"
+			+"██╔════╝██║████╗ ████║\n"
+			+"█████╗  ██║██╔████╔██║\n"
+			+"██╔══╝  ██║██║╚██╔╝██║\n"
+			+"██║     ██║██║ ╚═╝ ██║\n"
+			+"╚═╝     ╚═╝╚═╝     ╚═╝\u001B[0m");
+			
+		}
+		
+	public static void UmaNovaJornadaFinal() throws InterruptedException {
+		Imprimir("Carta: Querido Ethan, se você encontrou isso, significa que descobriu o segredo de nossa família. 'O OLho Secreto' era o nosso sonho, uma rede de agentes dedicados a proteger a cidade das sombras que a ameaçam. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir("Se você estiver lendo isso, saiba que acreditamos em você. Continue nosso trabalho e faça a diferença. Com amor, Mamãe e Papai \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		
+		Imprimir("Ethan sente uma onda de emoções ao ler a carta. As palavras de seus pais lhe dão um novo propósito. Ele retorna à cidade com um novo objetivo: honrar o legado de sua família e continuar o trabalho que seus pais começaram.\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+
+		Imprimir("Ethan decide reabrir a agência \"O Olho Secreto\", uma agência de detetives que operava secretamente na cidade. ",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir("Ele usa os documentos e artefatos deixados por seus pais para construir uma nova base de operações. Reúne uma equipe de aliados confiáveis, pessoas que ele conheceu durante sua busca e que compartilham seu desejo de justiça \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		
+		Imprimir("Ethan Blackwood: (em pé na frente de sua nova equipe, segurando o medalhão de prata) Meus pais começaram algo importante. Eles acreditavam que uma pessoa pode fazer a diferença. \n",TimeUnit.MILLISECONDS, tempo_dialogo);
+		Imprimir("Ethan Backwood: 'O Olho Secreto' renasce hoje, e juntos, vamos continuar esse legado. Vamos proteger a cidade e garantir que a verdade sempre prevaleça. \n\n",TimeUnit.MILLISECONDS, tempo_dialogo);
+		
+		Imprimir("Equipe: (em uníssono) Para o Olho Secreto! \n\n",TimeUnit.MILLISECONDS, tempo_dialogo);
+		
+		Imprimir("Ethan, agora com uma equipe dedicada ao seu lado, começa a operar a agência. Eles resolvem casos complexos, desvendam mistérios e protegem os inocentes.",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir("A agência se torna um símbolo de esperança e justiça em Sin City, e o nome Blackwood volta a ser respeitado e temido pelos criminosos. \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+
+		Imprimir("E assim, Ethan Blackwood honrou o legado de seus pais e encontrou seu propósito. A agência 'O Olho Secreto' renasceu, e com ela, a promessa de um futuro mais justo e seguro para Sin City. ",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir("Ethan seguiu os passos de seus pais, mas com sua própria marca de coragem e determinação. \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		
+		Imprimir("Ethan encontra paz e propósito ao continuar o trabalho de seus pais, reabrindo \"O Olho Secreto\" e dedicando sua vida a proteger a cidade e honrar o legado de sua família. \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		
+		System.out.println(
 				   "\u001B[33m███████╗██╗███╗   ███╗\n"
 							+"██╔════╝██║████╗ ████║\n"
 							+"█████╗  ██║██╔████╔██║\n"
 							+"██╔══╝  ██║██║╚██╔╝██║\n"
 							+"██║     ██║██║ ╚═╝ ██║\n"
 							+"╚═╝     ╚═╝╚═╝     ╚═╝\u001B[0m");
-
-	}
-
-	public static void FinalUmaNovaJornada() {
-		
 	}
 
 	
 	// #endregion
 
-   // Função responsável por iniciar o jogo.
-
+   /*
+    * Função responsável por iniciar o jogo. 
+    */ 
 	static void Jogar() throws Exception {
 		System.out.println("███████╗███████╗     ██╗ █████╗     ██████╗ ███████╗███╗   ███╗    ██╗   ██╗██╗███╗   ██╗██████╗  ██████╗      █████╗      ██████╗ ██████╗ ███████╗██████╗  █████╗  ██████╗      █████╗ ██╗   ██╗██████╗  ██████╗ ██████╗  █████╗ ██╗");
         System.out.println("██╔════╝██╔════╝     ██║██╔══██╗    ██╔══██╗██╔════╝████╗ ████║    ██║   ██║██║████╗  ██║██╔══██╗██╔═══██╗    ██╔══██╗    ██╔═══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔═══██╗    ██╔══██╗██║   ██║██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██║");
@@ -1257,10 +1285,10 @@ public class OperacaoAurora {
 	 */
 	public static void main(String[] args) throws Exception {
 		// Iniciando o jogo com o menu
-		SombrasGrandeMaca();
+		UmaNovaJornadaFinal();
 		
-//		// Ao final de tudo o scanner é encerrado.
-//		input.close();
+		// Ao final de tudo o scanner é encerrado.
+		//input.close();
 
 	}
 }
