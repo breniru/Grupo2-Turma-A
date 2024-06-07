@@ -44,7 +44,7 @@ public class OperacaoAurora {
 	 * Função responsável por dar ao jogador instruções sobre o jogo.
 	 */
 	static void intrucoes() throws Exception {
-		imprimir("\n Operação Aurora é uma experiência imersiva que combina elementos de narrativa e resolução de enigmas, proporcionando a você uma jornada emocionante e cheia de mistérios para desvendar! \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		imprimir("\nOperação Aurora é uma experiência imersiva que combina elementos de narrativa e resolução de enigmas, proporcionando a você uma jornada emocionante e cheia de mistérios para desvendar! \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		imprimir("Combinando narrativa envolvente com desafios matemáticos que testam as habilidades dos jogadores. \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		
 		imprimir(" *-* Aqui você irá descobrir a história de Ethan Blackwood, um jovem em busca da verdade por trás da morte misteriosa de seus pais em Sin City, 1925.. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
@@ -55,12 +55,13 @@ public class OperacaoAurora {
 		
 		imprimir("Para ficar preparado para essa imersão de enigmas matemáticos (polinômios, equações do segundo grau e propriedades da potenciação), aí estão algumas dicas que possam te ajudar: \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		
-		System.out.println("██████╗  ██████╗ ██╗     ██╗███╗   ██╗ ██████╗ ███╗   ███╗██╗ ██████╗ ███████╗");
-        System.out.println("██╔══██╗██╔═══██╗██║     ██║████╗  ██║██╔═══██╗████╗ ████║██║██╔═══██╗██╔════╝");
-        System.out.println("██████╔╝██║   ██║██║     ██║██╔██╗ ██║██║   ██║██╔████╔██║██║██║   ██║███████╗");
-        System.out.println("██╔═══╝ ██║   ██║██║     ██║██║╚██╗██║██║   ██║██║╚██╔╝██║██║██║   ██║╚════██║");
-        System.out.println("██║     ╚██████╔╝███████╗██║██║ ╚████║╚██████╔╝██║ ╚═╝ ██║██║╚██████╔╝███████║");
-        System.out.println("╚═╝      ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝ ╚═════╝ ╚══════╝ \n");
+		System.out.println(
+	  "\u001B[33m██████╗  ██████╗ ██╗     ██╗███╗   ██╗ ██████╗ ███╗   ███╗██╗ ██████╗ ███████╗\n"
+		       +"██╔══██╗██╔═══██╗██║     ██║████╗  ██║██╔═══██╗████╗ ████║██║██╔═══██╗██╔════╝\n"
+		       +"██████╔╝██║   ██║██║     ██║██╔██╗ ██║██║   ██║██╔████╔██║██║██║   ██║███████╗\n"
+		       +"██╔═══╝ ██║   ██║██║     ██║██║╚██╗██║██║   ██║██║╚██╔╝██║██║██║   ██║╚════██║\n"
+		       +"██║     ╚██████╔╝███████╗██║██║ ╚████║╚██████╔╝██║ ╚═╝ ██║██║╚██████╔╝███████║\n"
+		       +"╚═╝      ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝ ╚═════╝ ╚══════╝\\u001B[0m\n");
 
 		imprimir("Para apoio: Khan Academy - Polynomials e Brasil Escola - Polinômios \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		
@@ -68,12 +69,13 @@ public class OperacaoAurora {
 		imprimir(" *-* Para realizar operações com polinômios, é fundamental entender como adicionar, subtrair, multiplicar e dividir polinômios. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		imprimir(" *-* É importante também saber identificar o grau de um polinômio, que é o maior expoente da variável presente no polinômio. \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		
-		System.out.println("███████╗ ██████╗ ██╗   ██╗ █████╗  ██████╗ ██████╗ ███████╗███████╗    ██████╗      ██████╗ ██████╗  █████╗ ██╗   ██╗");
-        System.out.println("██╔════╝██╔═══██╗██║   ██║██╔══██╗██╔════╝██╔═══██╗██╔════╝██╔════╝    ╚════██╗    ██╔════╝ ██╔══██╗██╔══██╗██║   ██║");
-        System.out.println("█████╗  ██║   ██║██║   ██║███████║██║     ██║   ██║█████╗  ███████╗     █████╔╝    ██║  ███╗██████╔╝███████║██║   ██║");
-        System.out.println("██╔══╝  ██║▄▄ ██║██║   ██║██╔══██║██║     ██║   ██║██╔══╝  ╚════██║    ██╔═══╝     ██║   ██║██╔══██╗██╔══██║██║   ██║");
-        System.out.println("███████╗╚██████╔╝╚██████╔╝██║  ██║╚██████╗╚██████╔╝███████╗███████║    ███████╗    ╚██████╔╝██║  ██║██║  ██║╚██████╔╝");
-        System.out.println("╚══════╝ ╚══▀▀═╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚══════╝    ╚══════╝     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ \n");
+		System.out.println(
+	   "\u001B[33m███████╗ ██████╗ ██╗   ██╗ █████╗  ██████╗ ██████╗ ███████╗███████╗    ██████╗      ██████╗ ██████╗  █████╗ ██╗   ██╗\n"
+		        +"██╔════╝██╔═══██╗██║   ██║██╔══██╗██╔════╝██╔═══██╗██╔════╝██╔════╝    ╚════██╗    ██╔════╝ ██╔══██╗██╔══██╗██║   ██║\n"
+		        +"█████╗  ██║   ██║██║   ██║███████║██║     ██║   ██║█████╗  ███████╗     █████╔╝    ██║  ███╗██████╔╝███████║██║   ██║\n"
+		        +"██╔══╝  ██║▄▄ ██║██║   ██║██╔══██║██║     ██║   ██║██╔══╝  ╚════██║    ██╔═══╝     ██║   ██║██╔══██╗██╔══██║██║   ██║\n"
+		        +"███████╗╚██████╔╝╚██████╔╝██║  ██║╚██████╗╚██████╔╝███████╗███████║    ███████╗    ╚██████╔╝██║  ██║██║  ██║╚██████╔╝\n"
+		        +"╚══════╝ ╚══▀▀═╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚══════╝    ╚══════╝     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝\u001B[0m\n");
 
 		imprimir("Para apoio: Khan Academy - Quadratic Equations e Toda Matéria - Equações do 2º Grau \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		
@@ -81,12 +83,13 @@ public class OperacaoAurora {
 		imprimir(" *-* Para resolver uma equação do segundo grau, você pode usar a fórmula de Bhaskara \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		imprimir(" *-* É importante lembrar que uma equação do segundo grau pode ter duas raízes (quando o discriminante é maior que zero), uma raiz (quando o discriminante é igual a zero) ou nenhuma raiz real (quando o discriminante é menor que zero). \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 
-		System.out.println("██████╗  ██████╗ ████████╗███████╗███╗   ██╗ ██████╗██╗ █████╗  ██████╗ █████╗  ██████╗ ");
-        System.out.println("██╔══██╗██╔═══██╗╚══██╔══╝██╔════╝████╗  ██║██╔════╝██║██╔══██╗██╔════╝██╔══██╗██╔═══██╗");
-        System.out.println("██████╔╝██║   ██║   ██║   █████╗  ██╔██╗ ██║██║     ██║███████║██║     ███████║██║   ██║");
-        System.out.println("██╔═══╝ ██║   ██║   ██║   ██╔══╝  ██║╚██╗██║██║     ██║██╔══██║██║     ██╔══██║██║   ██║");
-        System.out.println("██║     ╚██████╔╝   ██║   ███████╗██║ ╚████║╚██████╗██║██║  ██║╚██████╗██║  ██║╚██████╔╝");
-        System.out.println("╚═╝      ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═══╝ ╚═════╝╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ \n");
+		System.out.println(
+	   "\u001B[33m██████╗  ██████╗ ████████╗███████╗███╗   ██╗ ██████╗██╗ █████╗  ██████╗ █████╗  ██████╗ \n"
+		        +"██╔══██╗██╔═══██╗╚══██╔══╝██╔════╝████╗  ██║██╔════╝██║██╔══██╗██╔════╝██╔══██╗██╔═══██╗\n"
+		        +"██████╔╝██║   ██║   ██║   █████╗  ██╔██╗ ██║██║     ██║███████║██║     ███████║██║   ██║\n"
+		        +"██╔═══╝ ██║   ██║   ██║   ██╔══╝  ██║╚██╗██║██║     ██║██╔══██║██║     ██╔══██║██║   ██║\n"
+		        +"██║     ╚██████╔╝   ██║   ███████╗██║ ╚████║╚██████╗██║██║  ██║╚██████╗██║  ██║╚██████╔╝\n"
+		        +"╚═╝      ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═══╝ ╚═════╝╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝\u001B[0m\n");
 
 		imprimir("Para apoio: Mundo Educação - Potenciação e Toda Matéria - Potenciação \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);	   	
 
@@ -116,12 +119,11 @@ public class OperacaoAurora {
 				+"╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝    ╚═════╝ ╚═╝  ╚═╝     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝\u001B[0m");
 				
 		System.out.println();
-		imprimir("Sin City, 1925. A cidade que nunca dorme pulsa com vida e energia, um caldeirão de sonhos, ambições e segredos obscuros. ",TimeUnit.MILLISECONDS, tempo_narrativa);
-		imprimir("Nas ruas movimentadas e becos escuros, a sombra da tragédia paira sobre Ethan Blackwood, um jovem atormentado pela morte misteriosa de seus pais. ",TimeUnit.MILLISECONDS, tempo_narrativa);
-		imprimir("As lembranças das últimas horas com eles ainda estão frescas em sua mente: a risada contagiante de sua mãe, a voz firme de seu pai, o aconchego do lar. ",TimeUnit.MILLISECONDS, tempo_narrativa);
-		imprimir("De repente, tudo se desfez em uma noite brutal, deixando apenas um rastro de perguntas sem respostas e um vazio imenso em seu coração.\n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		imprimir("Sin City, 1925. A cidade que nunca dorme pulsa com vida e energia, um caldeirão de sonhos, ambições e segredos obscuros.\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		imprimir("Nas ruas movimentadas e becos escuros, a sombra da tragédia paira sobre Ethan Blackwood, um jovem atormentado pela morte misteriosa de seus pais.\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		imprimir("As lembranças das últimas horas com eles ainda estão frescas em sua mente: a risada contagiante de sua mãe, a voz firme de seu pai, o aconchego do lar.\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		imprimir("De repente, tudo se desfez em uma noite brutal, deixando apenas um rastro de perguntas sem respostas e um vazio imenso em seu coração.\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 
-		imprimir("Um bar clandestino com iluminação fraca e música de jazz ao fundo. Ethan Blackwood, de aparência abatida, está sentado no balcão, segurando um copo de whisky. O barman, um homem de meia-idade com um olhar astuto, se aproxima.",TimeUnit.MILLISECONDS, tempo_narrativa);		
 		imprimir("Um bar clandestino, com iluminação fraca e música de jazz ao fundo. Ethan Blackwood, de aparência abatida, está sentado no balcão, segurando um copo de whisky. O barman, um homem de meia-idade com um olhar astuto, se aproxima.\n\n",TimeUnit.MILLISECONDS, tempo_narrativa);		
 		
 		imprimir("Barman: (enxugando um copo) Você tem andado pensativo, rapaz. O que te traz a este canto esquecido da cidade? \n",TimeUnit.MILLISECONDS, tempo_dialogo);		
@@ -227,7 +229,7 @@ public class OperacaoAurora {
 		imprimir("Ethan: (olhando em volta, segurando o mapa) Se minha interpretação está correta, este é o lugar onde o sol se põe. Agora, só preciso encontrar a entrada secreta.\n\n",TimeUnit.MILLISECONDS, tempo_dialogo);		
 		
 		imprimir("Após semanas de investigação, noites sem dormir e inúmeros perigos enfrentados, Ethan finalmente decifra o mapa. \n",TimeUnit.MILLISECONDS, tempo_narrativa);		
-		imprimir("As coordenadas o levam a um local abandonado nos arredores da cidade. Ao chegar lá, ele encontra um baú enterrado, contendo mais documentos, artefatos e outra pista que o levaria a \\\"Aurora\\\"",TimeUnit.MILLISECONDS, tempo_narrativa);		
+		imprimir("As coordenadas o levam a um local abandonado nos arredores da cidade. Ao chegar lá, ele encontra um baú enterrado, contendo mais documentos, artefatos e outra pista que o levaria a \"Aurora\"",TimeUnit.MILLISECONDS, tempo_narrativa);		
 	}
 
 //	 Função responsável por iniciar o SEGUNDO capitúlo.
@@ -1242,13 +1244,26 @@ public class OperacaoAurora {
     * Função responsável por iniciar o jogo. 
     */ 
 	static void jogar() throws Exception {
-		System.out.println("███████╗███████╗     ██╗ █████╗     ██████╗ ███████╗███╗   ███╗    ██╗   ██╗██╗███╗   ██╗██████╗  ██████╗      █████╗      ██████╗ ██████╗ ███████╗██████╗  █████╗  ██████╗      █████╗ ██╗   ██╗██████╗  ██████╗ ██████╗  █████╗ ██╗");
-        System.out.println("██╔════╝██╔════╝     ██║██╔══██╗    ██╔══██╗██╔════╝████╗ ████║    ██║   ██║██║████╗  ██║██╔══██╗██╔═══██╗    ██╔══██╗    ██╔═══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔═══██╗    ██╔══██╗██║   ██║██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██║");
-        System.out.println("███████╗█████╗       ██║███████║    ██████╔╝█████╗  ██╔████╔██║    ██║   ██║██║██╔██╗ ██║██║  ██║██║   ██║    ███████║    ██║   ██║██████╔╝█████╗  ██████╔╝███████║██║   ██║    ███████║██║   ██║██████╔╝██║   ██║██████╔╝███████║██║");
-        System.out.println("╚════██║██╔══╝  ██   ██║██╔══██║    ██╔══██╗██╔══╝  ██║╚██╔╝██║    ╚██╗ ██╔╝██║██║╚██╗██║██║  ██║██║   ██║    ██╔══██║    ██║   ██║██╔═══╝ ██╔══╝  ██╔══██╗██╔══██║██║   ██║    ██╔══██║██║   ██║██╔══██╗██║   ██║██╔══██╗██╔══██║╚═╝");
-        System.out.println("███████║███████╗╚█████╔╝██║  ██║    ██████╔╝███████╗██║ ╚═╝ ██║     ╚████╔╝ ██║██║ ╚████║██████╔╝╚██████╔╝    ██║  ██║    ╚██████╔╝██║     ███████╗██║  ██║██║  ██║╚██████╔╝    ██║  ██║╚██████╔╝██║  ██║╚██████╔╝██║  ██║██║  ██║██╗");
-        System.out.println("╚══════╝╚══════╝ ╚════╝ ╚═╝  ╚═╝    ╚═════╝ ╚══════╝╚═╝     ╚═╝      ╚═══╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝     ╚═╝  ╚═╝     ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝");
+		System.out.println(
+	"\u001B[33m\n███████╗███████╗     ██╗ █████╗     ██████╗ ███████╗███╗   ███╗    ██╗   ██╗██╗███╗   ██╗██████╗  ██████╗      █████╗\n"    
+		       +"██╔════╝██╔════╝     ██║██╔══██╗    ██╔══██╗██╔════╝████╗ ████║    ██║   ██║██║████╗  ██║██╔══██╗██╔═══██╗    ██╔══██╗\n" 
+		       +"███████╗█████╗       ██║███████║    ██████╔╝█████╗  ██╔████╔██║    ██║   ██║██║██╔██╗ ██║██║  ██║██║   ██║    ███████║\n"  
+		       +"╚════██║██╔══╝  ██   ██║██╔══██║    ██╔══██╗██╔══╝  ██║╚██╔╝██║    ╚██╗ ██╔╝██║██║╚██╗██║██║  ██║██║   ██║    ██╔══██║\n" 
+		       +"███████║███████╗╚█████╔╝██║  ██║    ██████╔╝███████╗██║ ╚═╝ ██║     ╚████╔╝ ██║██║ ╚████║██████╔╝╚██████╔╝    ██║  ██║\n" 
+		       +"╚══════╝╚══════╝ ╚════╝ ╚═╝  ╚═╝    ╚═════╝ ╚══════╝╚═╝     ╚═╝      ╚═══╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝     ╚═╝  ╚═╝\n"  
 
+		
+			   +" ██████╗ ██████╗ ███████╗██████╗  █████╗  ██████╗ █████╗  ██████╗      █████╗ ██╗   ██╗██████╗  ██████╗ ██████╗  █████╗ ██╗\n"
+			   +"██╔═══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔═══██╗    ██╔══██╗██║   ██║██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██║\n"
+			   +"██║   ██║██████╔╝█████╗  ██████╔╝███████║██║     ███████║██║   ██║    ███████║██║   ██║██████╔╝██║   ██║██████╔╝███████║██║\n"
+			   +"██║   ██║██╔═══╝ ██╔══╝  ██╔══██╗██╔══██║██║     ██╔══██║██║   ██║    ██╔══██║██║   ██║██╔══██╗██║   ██║██╔══██╗██╔══██║╚═╝\n"
+			   +"╚██████╔╝██║     ███████╗██║  ██║██║  ██║╚██████╗██║  ██║╚██████╔╝    ██║  ██║╚██████╔╝██║  ██║╚██████╔╝██║  ██║██║  ██║██╗\n"
+			   +" ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝\u001B[0m\n");
+
+		
+		
+		
+		
 		imprimir("Preparado(a) para uma aventura nunca antes vivida? Aperte os cintos e vamos lá!", TimeUnit.MILLISECONDS, tempo_transicao);
 
         /* 
