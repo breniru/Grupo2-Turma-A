@@ -99,7 +99,7 @@ public class OperacaoAurora {
 		imprimir(" *-*  2. divisão de potências de mesma base; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		imprimir(" *-*  3. potência de potência; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		imprimir(" *-*  4. produto de potências com a mesma base; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
-		imprimir(" *-*  5. coeficiente de potências com a mesma base; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		imprimir(" *-*  5. quociente de potências com a mesma base; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		imprimir(" *-*  6. qualquer número elevado a zero é igual a 1; \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		imprimir(" *-*  7. potência negativa é o inverso da potência positiva. \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		
