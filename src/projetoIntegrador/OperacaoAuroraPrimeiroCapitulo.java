@@ -51,12 +51,11 @@ public class OperacaoAuroraPrimeiroCapitulo {
 				+"╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝    ╚═════╝ ╚═╝  ╚═╝     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝\u001B[0m");
 				
 		System.out.println();
-		Imprimir("Sin City, 1925. A cidade que nunca dorme pulsa com vida e energia, um caldeirão de sonhos, ambições e segredos obscuros. ",TimeUnit.MILLISECONDS, tempo_narrativa);
-		Imprimir("Nas ruas movimentadas e becos escuros, a sombra da tragédia paira sobre Ethan Blackwood, um jovem atormentado pela morte misteriosa de seus pais. ",TimeUnit.MILLISECONDS, tempo_narrativa);
-		Imprimir("As lembranças das últimas horas com eles ainda estão frescas em sua mente: a risada contagiante de sua mãe, a voz firme de seu pai, o aconchego do lar. ",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir("Sin City, 1925. A cidade que nunca dorme pulsa com vida e energia, um caldeirão de sonhos, ambições e segredos obscuros.\n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir("Nas ruas movimentadas e becos escuros, a sombra da tragédia paira sobre Ethan Blackwood, um jovem atormentado pela morte misteriosa de seus pais. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
+		Imprimir("As lembranças das últimas horas com eles ainda estão frescas em sua mente: a risada contagiante de sua mãe, a voz firme de seu pai, o aconchego do lar. \n",TimeUnit.MILLISECONDS, tempo_narrativa);
 		Imprimir("De repente, tudo se desfez em uma noite brutal, deixando apenas um rastro de perguntas sem respostas e um vazio imenso em seu coração.\n\n",TimeUnit.MILLISECONDS, tempo_narrativa);
 
-		Imprimir("Um bar clandestino com iluminação fraca e música de jazz ao fundo. Ethan Blackwood, de aparência abatida, está sentado no balcão, segurando um copo de whisky. O barman, um homem de meia-idade com um olhar astuto, se aproxima.",TimeUnit.MILLISECONDS, tempo_narrativa);		
 		Imprimir("Um bar clandestino, com iluminação fraca e música de jazz ao fundo. Ethan Blackwood, de aparência abatida, está sentado no balcão, segurando um copo de whisky. O barman, um homem de meia-idade com um olhar astuto, se aproxima.\n\n",TimeUnit.MILLISECONDS, tempo_narrativa);		
 		
 		Imprimir("Barman: (enxugando um copo) Você tem andado pensativo, rapaz. O que te traz a este canto esquecido da cidade? \n",TimeUnit.MILLISECONDS, tempo_dialogo);		
@@ -65,7 +64,7 @@ public class OperacaoAuroraPrimeiroCapitulo {
 		
 		Imprimir("Ethan Blackwood, em um beco escuro, confrontando um informante, um homem magro e nervoso chamado Jimmy. \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);		
 		
-		Imprimir("Ethan Blackwood: (segurando o colarinho de Jimmy) Você sabe algo sobre a noite em que meus pais morreram. Fale, ou vai se arrepender de ter nascido...",TimeUnit.MILLISECONDS, tempo_dialogo);		
+		Imprimir("Ethan Blackwood: (segurando o colarinho de Jimmy) Você sabe algo sobre a noite em que meus pais morreram. Fale, ou vai se arrepender de ter nascido...\n",TimeUnit.MILLISECONDS, tempo_dialogo);		
 		Imprimir("Jimmy: (tentando se soltar, com medo nos olhos) Ok, ok! Tudo o que sei é que eles estavam envolvidos com algo grande. Ouvi dizer que um tal de Aurora estava no centro disso tudo. \n\n",TimeUnit.MILLISECONDS, tempo_dialogo);		
 		
 		Imprimir("No apartamento de Ethan. Ele está sentado em sua escrivaninha, examinando o medalhão de prata antigo. Ao tocá-lo, uma mensagem holográfica surge. \n",TimeUnit.MILLISECONDS, tempo_narrativa);		
@@ -122,7 +121,7 @@ public class OperacaoAuroraPrimeiroCapitulo {
             System.out.println();
             Imprimir("Digite a letra da resposta correta: ",TimeUnit.MILLISECONDS, tempo_transicao);
             
-            String resposta = input.nextLine().toUpperCase();
+            String resposta = "A";
 
             int indexResposta = -1;
             switch (resposta) {
@@ -162,7 +161,7 @@ public class OperacaoAuroraPrimeiroCapitulo {
 		Imprimir("Ethan: (olhando em volta, segurando o mapa) Se minha interpretação está correta, este é o lugar onde o sol se põe. Agora, só preciso encontrar a entrada secreta.\n\n",TimeUnit.MILLISECONDS, tempo_dialogo);		
 		
 		Imprimir("Após semanas de investigação, noites sem dormir e inúmeros perigos enfrentados, Ethan finalmente decifra o mapa. \n",TimeUnit.MILLISECONDS, tempo_narrativa);		
-		Imprimir("As coordenadas o levam a um local abandonado nos arredores da cidade. Ao chegar lá, ele encontra um baú enterrado, contendo mais documentos, artefatos e outra pista que o levaria a \\\"Aurora\\\"",TimeUnit.MILLISECONDS, tempo_narrativa);		
+		Imprimir("As coordenadas o levam a um local abandonado nos arredores da cidade. Ao chegar lá, ele encontra um baú enterrado, contendo mais documentos, artefatos e outra pista que o levaria a \"Aurora\"",TimeUnit.MILLISECONDS, tempo_narrativa);		
 	}
 
 	/*

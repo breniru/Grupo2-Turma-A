@@ -132,7 +132,7 @@ public class OperacaoAurora {
 		
 		imprimir("Ethan Blackwood, em um beco escuro, confrontando um informante, um homem magro e nervoso chamado Jimmy. \n\n",TimeUnit.MILLISECONDS, tempo_narrativa);		
 		
-		imprimir("Ethan Blackwood: (segurando o colarinho de Jimmy) Você sabe algo sobre a noite em que meus pais morreram. Fale, ou vai se arrepender de ter nascido...",TimeUnit.MILLISECONDS, tempo_dialogo);		
+		imprimir("Ethan Blackwood: (segurando o colarinho de Jimmy) Você sabe algo sobre a noite em que meus pais morreram. Fale, ou vai se arrepender de ter nascido...\n",TimeUnit.MILLISECONDS, tempo_dialogo);		
 		imprimir("Jimmy: (tentando se soltar, com medo nos olhos) Ok, ok! Tudo o que sei é que eles estavam envolvidos com algo grande. Ouvi dizer que um tal de Aurora estava no centro disso tudo. \n\n",TimeUnit.MILLISECONDS, tempo_dialogo);		
 		
 		imprimir("No apartamento de Ethan. Ele está sentado em sua escrivaninha, examinando o medalhão de prata antigo. Ao tocá-lo, uma mensagem holográfica surge. \n",TimeUnit.MILLISECONDS, tempo_narrativa);		
